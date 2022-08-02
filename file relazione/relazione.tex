@@ -1,0 +1,165 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+
+%% immagini
+%\begin{figure}[h]
+% \centering
+% \includegraphics[width=\columnwidth]{diagrammiClassi/gerarchiaPersone}
+% \caption{Diagramma delle classi - Gerarchia utenti.}
+%\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+%% APPUNTI
+% È
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=16cm]{immagini/img1}
+% \caption{Descr ~\cite{rif1}.}
+%  \end{figure}
+
+
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{import}
+\usepackage{todonotes}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{siunitx}
+\usepackage{pdflscape}
+\usepackage{subfig}
+\usepackage[euler]{textgreek}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[signatures,swapnames,sans]{frontespizio}
+
+\usepackage{geometry}
+\geometry{portrait, margin=3cm}
+\usepackage{siunitx}
+
+\renewcommand*\figurename{Figura}
+
+\newcommand{\sub}[1]{\textsubscript{#1}}
+\newcommand{\super}[1]{\textsuperscript{#1}}
+
+\newcommand{\Fig}[0]{Fig.}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}{\normalfont\huge}{}{20pt}{\huge\bfseries}
+
+\begin{document}
+	\begin{frontespizio}
+		\Margini{3cm}{3cm}{3cm}{3cm}
+		\Universita{Bergamo}
+		\Logo[43.332mm]{unibg-mark}
+		\Divisione{Scuola di Ingegneria}
+		\Corso[Laurea Magistrale]{Ingegneria Informatica}
+		\Titolo{Elettronica e Misure Industriali}
+		\Sottotitolo{Relazione esperienze di laboratorio}
+		\Punteggiatura{}
+		\NRelatore{Prof.}{Prof.}
+		\Relatore{Valerio Re}
+		\NCorrelatore{Prof.}{Prof.}
+		\Correlatore{Massimo Manghisoni}
+		\Candidato[1058231]{Giulia Allievi}
+		\Annoaccademico{2021--2022}
+		\begin{Preambolo*}
+			\usepackage[italian]{babel}
+			\usepackage[T1]{fontenc}
+			\usepackage[utf8]{inputenc}
+			\usepackage{microtype}
+			\usepackage{lmodern}
+			\graphicspath{{img/}}
+			
+			\renewcommand{\frontinstitutionfont}{\fontsize{14}{17}\bfseries\scshape}
+			\renewcommand{\fronttitlefont}{\fontsize{17}{21}\bfseries\scshape}
+			\renewcommand{\frontfootfont}{\fontsize{12}{14}\bfseries\scshape}
+		\end{Preambolo*}
+	\end{frontespizio}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PAGINA BIANCA
+%----------------------------------------------------------------------------------------
+\newpage
+\null
+\thispagestyle{empty}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	INDICE
+%----------------------------------------------------------------------------------------
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+%	CIRCUITO 1: EMITTER FOLLOWER	
+%----------------------------------------------------------------------------------------
+\chapter{Circuito 1: Emitter Follower}
+\section{Introduzione} 
+\section{Prima versione} % alimentazione duale
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\subsection{Componenti e misure} 
+\section{Seconda versione} % alimentazione singola
+\subsection{Schema} 
+\subsection{Analisi del circuito} % versione base + versione partitore + versione condensatore
+\subsection{Componenti e misure} 
+
+
+%----------------------------------------------------------------------------------------
+%	CIRCUITO 2: COMMON EMITTER AMPLIFIER
+%----------------------------------------------------------------------------------------
+\clearpage
+\newpage
+\chapter{Circuito 2: Common Emitter Amplifier}
+\section{Introduzione} 
+\section{Prima versione} % senza degenerazione emitter, solo trattazione teorica non realizzato in lab
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\section{Seconda versione} % con degenerazione emitter, alimentazione duale
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\subsection{Componenti e misure} 
+\section{Terza versione} % con degenerazione emitter, alimentazione singola (in piccolo segnale aggiungi già il condensatore)
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\subsection{Componenti e misure} 
+
+
+%----------------------------------------------------------------------------------------
+%	CIRCUITI 3 E 4: AMPLIFICATORE OPERAZIONALE \mu A741
+%----------------------------------------------------------------------------------------
+\clearpage
+\newpage
+\chapter{Circuiti 3 e 4: Amplificatore operazionale \textmu A741}
+\section{Introduzione} 
+\section{Amplificatore invertente} 
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\subsection{Componenti e misure} 
+\section{Integratore} 
+\subsection{Schema} 
+\subsection{Analisi del circuito} 
+\subsection{Componenti e misure} 
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
