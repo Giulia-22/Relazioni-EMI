@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  4 AUG 2022 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  5 AUG 2022 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1160,34 +1160,34 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 ) (./relazione.aux)
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 6
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 42.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 4
+2.
 
 (c:/texlive/2021/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Info: Redefining \it@ocap on input line 67.
-LaTeX Info: Redefining \it@ccap on input line 67.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Info: Redefining \it@ocap on input line 42.
+LaTeX Info: Redefining \it@ccap on input line 42.
 
 
 File italian.ldf warning: 
@@ -1195,7 +1195,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 67.
+italian.ldf    on input line 42.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1219,7 +1219,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 42.
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1232,16 +1232,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./relazione.out) (./relazione.out)
 \@outlinefile=\write5
 \openout5 = `relazione.out'.
 
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 67.
+alian.trsl' found. on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1283,7 +1283,7 @@ Package caption Info: End \AtBeginDocument code.
 <relazione-frn.pdf, id=143, 597.50829pt x 845.0471pt>
 File: relazione-frn.pdf Graphic file (type pdf)
 <use relazione-frn.pdf>
-Package pdftex.def Info: relazione-frn.pdf  used on input line 69.
+Package pdftex.def Info: relazione-frn.pdf  used on input line 44.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 [1
 
@@ -1292,8 +1292,8 @@ map}>]pdfTeX warning (ext4): destination with the same identifier (name{page.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \newpage
-               [1] (./relazione.toc
+l.81 \newpage
+              [1] (./relazione.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1318,7 +1318,7 @@ Capitolo 1.
 <immagini/EFv1.png, id=228, 770.88pt x 741.972pt>
 File: immagini/EFv1.png Graphic file (type png)
 <use immagini/EFv1.png>
-Package pdftex.def Info: immagini/EFv1.png  used on input line 142.
+Package pdftex.def Info: immagini/EFv1.png  used on input line 117.
 (pdftex.def)             Requested size: 295.60757pt x 284.52756pt.
 [5
 
@@ -1326,58 +1326,80 @@ Package pdftex.def Info: immagini/EFv1.png  used on input line 142.
 <immagini/EFv1_pl.png, id=237, 1445.4pt x 1529.715pt>
 File: immagini/EFv1_pl.png Graphic file (type png)
 <use immagini/EFv1_pl.png>
-Package pdftex.def Info: immagini/EFv1_pl.png  used on input line 149.
+Package pdftex.def Info: immagini/EFv1_pl.png  used on input line 124.
 (pdftex.def)             Requested size: 268.82838pt x 284.52756pt.
  [6 <./immagini/EFv1_pl.png>]
 <immagini/EFv1_ps.png, id=250, 1467.081pt x 1149.093pt>
 File: immagini/EFv1_ps.png Graphic file (type png)
 <use immagini/EFv1_ps.png>
-Package pdftex.def Info: immagini/EFv1_ps.png  used on input line 181.
+Package pdftex.def Info: immagini/EFv1_ps.png  used on input line 155.
 (pdftex.def)             Requested size: 348.72638pt x 273.14662pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--196
-
- []
-
-[7 <./immagini/EFv1_ps.png>] [8]
+ [7 <./immagini/EFv1_ps.png>]
+<immagini/fotoEFv1.jpg, id=261, 727.21687pt x 467.49657pt>
+File: immagini/fotoEFv1.jpg Graphic file (type jpg)
+<use immagini/fotoEFv1.jpg>
+Package pdftex.def Info: immagini/fotoEFv1.jpg  used on input line 178.
+(pdftex.def)             Requested size: 292.1133pt x 187.78836pt.
+ [8 <./immagini/fotoEFv1.jpg>]
+<immagini/fotoEFv1_pl.jpg, id=270, 963.6pt x 676.77844pt>
+File: immagini/fotoEFv1_pl.jpg Graphic file (type jpg)
+<use immagini/fotoEFv1_pl.jpg>
+Package pdftex.def Info: immagini/fotoEFv1_pl.jpg  used on input line 217.
+(pdftex.def)             Requested size: 295.72813pt x 207.7052pt.
+<immagini/oscillo1.png, id=275, 803.0pt x 481.8pt>
+File: immagini/oscillo1.png Graphic file (type png)
+<use immagini/oscillo1.png>
+Package pdftex.def Info: immagini/oscillo1.png  used on input line 239.
+(pdftex.def)             Requested size: 331.94pt x 199.16928pt.
+<immagini/graficoEFv1.png, id=278, 362.3136pt x 302.0886pt>
+File: immagini/graficoEFv1.png Graphic file (type png)
+<use immagini/graficoEFv1.png>
+Package pdftex.def Info: immagini/graficoEFv1.png  used on input line 280.
+(pdftex.def)             Requested size: 238.87894pt x 199.16928pt.
+ [9 <./immagini/fotoEFv1_pl.jpg>] [10 <./immagini/oscillo1.PNG (PNG copy)>] [11
+ <./immagini/graficoEFv1.png (PNG copy)>]
+[12]
 Capitolo 2.
-[9
+[13
 
 
 ]
 Capitolo 3.
-[10
+[14
 
 
 ] (./relazione.aux)
 Package rerunfilecheck Info: File `relazione.out' has not changed.
-(rerunfilecheck)             Checksum: A5AF9C7CC0F05C311824FDCA95CEFE12;5520.
+(rerunfilecheck)             Checksum: 21FAF51A27009A11903E7EBAF0A166AD;5604.
  ) 
 Here is how much of TeX's memory you used:
- 29157 strings out of 478353
- 571226 string characters out of 5852101
- 837297 words of memory out of 5000000
- 46759 multiletter control sequences out of 15000+600000
- 408925 words of font info for 47 fonts, out of 8000000 for 9000
+ 29233 strings out of 478353
+ 572852 string characters out of 5852101
+ 845103 words of memory out of 5000000
+ 46816 multiletter control sequences out of 15000+600000
+ 409912 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,13n,133p,724b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,14n,133p,827b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:
-/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2021/texm
-f-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2021/texmf-dist/fonts/type1
-/public/lm/lmssbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super
-/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.
-pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on relazione.pdf (11 pages, 475932 bytes).
+st/fonts/type1/public/amsfonts/cm/cmbx5.pfb><c:/texlive/2021/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/
+type1/public/lm/lmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lm
+ss12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/tex
+live/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/
+texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist
+/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on relazione.pdf (15 pages, 940933 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 
