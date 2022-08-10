@@ -14,6 +14,7 @@
 \usepackage{pdflscape}
 \usepackage{subfig}
 \usepackage[euler]{textgreek}
+\usepackage{mhchem}
 
 \usepackage{enumerate} 
 \usepackage{amsmath}
@@ -136,7 +137,7 @@ Dato che $V_{CB}>0V$, la giunzione base-collettore è polarizzata inversamente, 
 \\Ora possiamo calcolare la corrente di emettitore con la legge di Ohm: 
 \\[2pt]\indent$\displaystyle{V_E-V_{EE}=R_E\cdot I_E \rightarrow I_E=I_C=\frac{V_E-V_{EE}}{R_E}=\frac{-0.7V-(-10V)}{3.3k\Omega}=2.818mA}$
 \\[2pt]Il circuito è ora completamente risolto, come ultima cosa si può calcolare la transconduttanza, visto che ci servirà successivamente per l'analisi di piccolo segnale. La transconduttanza è definita come il rapporto tra la corrente di collettore stazionaria $I_C$ e la tensione termica $V_T$, che a temperatura ambiente vale circa 26mV. 
-\\[2pt]In formule: $\displaystyle{g_m=\frac{I_C}{V_T}=\frac{2.818mA}{26mV}=0.108 \frac{A}{V}}$.
+\\[2pt]In formule: $\displaystyle{g_m=\frac{I_C}{\Phi_T}=\frac{2.818mA}{26mV}=0.108 \frac{A}{V}}$.
 \\[3pt]In tabella \ref{table:EFv1_pl} sono riassunte tutte le grandezze ricavate dal punto di lavoro. 
 \begin{table}[h]
 	\centering
@@ -304,7 +305,7 @@ Per quest'analisi è sufficiente sostituire il generatore di tensione $v_i$ con 
 \caption{Punto di lavoro dell'\textit{Emitter follower} ad alimentazione singola.}
 \label{figura:EFv2_1_pl}
 \end{figure}
-\\Utilizziamo ancora il modello ideale del transistor, perciò assumiamo che $\displaystyle{\beta\rightarrow\infty}$ e che $I_{B}=0A$. Allora, la corrente che fluisce nella resistenza  $R_B$ è nulla, quindi sarà nulla anche la caduta di tensione ai suoi capi.
+\\Utilizziamo ancora il modello ideale del transistor, perciò assumiamo che $\displaystyle{\beta\rightarrow\infty}$ e che $I_{B}=0A$. Allora, la corrente che fluisce nella resistenza  $R_B$ è nulla, quindi sarà nulla anche la caduta di tensione ai suoi capi, di conseguenza $V_B=0V$.
 \\\indent Suppondendo che il transistor si trovi in regione attiva diretta, la tensione $V_{BE}$ fra la base e l'emettitore è pari a circa +0.7V perché la giunzione è polarizzata direttamente. Dato che sappiamo che $V_{B}=0V$, $V_{E}$ sarà uguale a -0.7V. 
 \\\indent La resistenza $R_E$ è attraversata da una corrente che va dalla massa all'emettitore: questo non è possibile, perché implicherebbe che la corrente entri nel transistor e fluisca dall'emettitore al collettore, ovvero nel verso opposto rispetto a quello consentito. Questo porta ad affermare che il transistor non può trovarsi in regione attiva diretta, ma è spento. Finché l'emettitore si trova ad una tensione minore di 0V, ovvero fin quando $V_B$ è minore di 0.7V, il circuito non funzionerà correttamente.
 \\\indent Per ovviare a questo problema, bisogna fare in modo che la base del transistor si trovi ad una tensione adeguata. Per alzare il valore di tensione di questo nodo, possiamo sfruttare un partitore di resistenze. Inseriamo allora una resistenza da \SI{130}{k\ohm} fra la tensione di alimentazione e la base del transistor ed un'altra resistenza da \SI{150}{k\ohm} fra la base del transistor e massa. La resistenza di emettitore $R_E$ è invece pari a \SI{7.5}{k\ohm}. Il circuito è mostrato in figura \ref{figura:EFv2_2}.
@@ -356,10 +357,10 @@ Per l'analisi di piccolo segnale consideriamo lo schema di figura \ref{figura:EF
 \label{figura:EFv2_3_ps}
 \end{figure}
 \\Il circuito di destra è identico a quello dell'\textit{Emitter follower} ad alimentazione di duale, cambia solo il valore della resistenza $R_E$. Nel circuito di sinistra possiamo invece riconoscere un filtro passa-alto formato dal condensatore $C$ e dal parallelo fra le resistenze $R_1$ e $R_2$. La frequenza di taglio di questo filtro è:
-\\[2pt]\indent $\displaystyle{f_0=\frac{1}{2\pi\cdot C\cdot (R_1\parallelsum R_2)}=\frac{1}{2\pi\cdot 1\mu F\cdot(\SI{130}{k\ohm}\parallelsum\SI{150}{k\ohm})}=\SI{2.285}{\hertz}}$
+\\[2pt]\indent $\displaystyle{f_t=\frac{1}{2\pi\cdot C\cdot (R_1\parallelsum R_2)}=\frac{1}{2\pi\cdot 1\mu F\cdot(\SI{130}{k\ohm}\parallelsum\SI{150}{k\ohm})}=\SI{2.285}{\hertz}}$
 \\[2pt]Se la frequenza di taglio è sufficientemente bassa, come nel nostro caso, il contributo del filtro passa-alto alla funzione di trasferimento del circuito è trascurabile, pertanto $v_o=v_i$. In caso contrario, nella funzione di trasferimento finale bisogna considerare anche la funzione di trasferimento del filtro.
 \subsection{Componenti, strumenti e misure} 
-Prima di realizzare la versione finale del circuito \textit{Emitter follower} ad alimentazione singola, abbiamo provato a collegare a massa l'alimentazione negativa del circuito utilizzato prima. In figura \ref{figura:oscillo2} sono riportate la tensione in ingresso e la tensione in uscita al circuito appena modificato. I due segnali sono stati accoppiati in continua.
+Prima di realizzare la versione finale del circuito \textit{Emitter follower} ad alimentazione singola, abbiamo provato a collegare a massa l'alimentazione negativa del circuito utilizzato prima. In figura \ref{figura:oscillo2} sono riportate la tensione in ingresso e la tensione in uscita al circuito appena modificato. I due segnali sono stati accoppiati in DC.
 \begin{figure}[h]
 \centering
 \includegraphics[height=7cm]{immagini/oscillo2}
@@ -379,7 +380,7 @@ Prima di realizzare la versione finale del circuito \textit{Emitter follower} ad
 Per quanto riguarda $R_E$, non è stato possibile utilizzare una resistenza del valore indicato (\SI{7.5}{k\ohm}), ma con queste connessioni otteniamo una resistenza di valore poco maggiore (solo il 4\%). Lo stesso discorso vale per le altre due resistenze, però quello che conta in questo caso non è tanto il valore del singolo componente, quanto il fattore di partizione. Il fattore di partizione che dovremmo ottenere è di 0.5357, quello che otteniamo è di 0.5522, ovvero solo il 3\% in più.
 \begin{figure}[h]
 \centering
-\includegraphics[height=6.6cm]{immagini/fotoEFv2_3}
+\includegraphics[height=8.5cm]{immagini/fotoEFv2_3}
 \caption{Fotografia del circuito \textit{Emitter follower} ad alimentazione singola realizzato in laboratorio.}
 \label{figura:fotoEFv2_3}
 \end{figure}
@@ -390,7 +391,7 @@ Per quanto riguarda $R_E$, non è stato possibile utilizzare una resistenza del 
 \item multimetro da banco;
 \item oscilloscopio a due canali.
 \end{itemize}
-Come per il circuito precedente, per prima cosa andiamo a misurare il valore delle resistenze con il multimetro. I valori ottenuti sono mostrati in tabella \ref{table:EFv2_3_comp}.
+Come per il circuito precedente, per prima cosa andiamo a misurare il valore delle resistenze con il multimetro ed i valori delle tensioni delle giunzioni p-n del transistor. I valori ottenuti sono mostrati in tabella \ref{table:EFv2_3_comp}.
 \\
 \begin{table}[h]
 	\centering
@@ -414,6 +415,10 @@ Come per il circuito precedente, per prima cosa andiamo a misurare il valore del
 		\hline
 		$\mathbf{R_{23}}$& \SI{82}{k\ohm} & \SI{82.18}{k\ohm} \\ 
 		\hline
+		$\mathbf{V_{BE}}$& $\mathrm{ \simeq0.7V}$ & 0.699V \\ 
+		\hline
+		$\mathbf{V_{BC}}$& $\mathrm{ \simeq0.7V}$  & 0.659V \\ 
+		\hline
 	\end{tabular}
 \caption{Grandezze misurate prima di realizzare il circuito.}
 \label{table:EFv2_3_comp}
@@ -434,7 +439,7 @@ Come per il circuito precedente, per prima cosa andiamo a misurare il valore del
 \caption{Grandezze misurate dallo studio del punto di lavoro del circuito.}
 \label{table:EFv2_3_pl_mis}
 \end{table}
-\\Terminato lo studio del punto di lavoro, applichiamo il segnale al circuito collegando il generatore di forme d'onda e osserviamo il grafico della tensione in ingresso e della tensione in uscita con l'oscilloscopio. La forma d'onda utilizzata è una sinusoide di frequenza $f=\SI{1}{k\hertz}$ e tensione picco-picco $V_{PP}$ di 2V. Il grafico è riportato in figura \ref{figura:oscillo3}, i due segnali sono accoppiati in continua.
+\\Terminato lo studio del punto di lavoro, applichiamo il segnale al circuito collegando il generatore di forme d'onda e osserviamo il grafico della tensione in ingresso e della tensione in uscita con l'oscilloscopio. La forma d'onda utilizzata è una sinusoide di frequenza $f=\SI{1}{k\hertz}$ e tensione picco-picco $V_{PP}$ di 2V. Il grafico è riportato in figura \ref{figura:oscillo3}, i due segnali sono accoppiati in DC.
 \begin{figure}[h]
 \centering
 \includegraphics[height=7cm]{immagini/oscillo3}
@@ -448,15 +453,179 @@ Come per il circuito precedente, per prima cosa andiamo a misurare il valore del
 \clearpage
 \newpage
 \chapter{Circuito 2: Common Emitter Amplifier}
-\section{Introduzione} 
+\section{Introduzione}
+Vogliamo ora realizzare un circuito che funzioni come amplificatore. Se manteniamo l'emettitore ad una tensione costante e preleviamo l'uscita dal collettore questo è possibile. Questo circuito è chiamato \textit{Common Emitter amplifier}. Abbiamo analizzato tre diverse versioni di questo circuito ma ne abbiamo realizzate solo due, una con alimentazione duale ed una con alimentazione singola, entrambe con la configurazione detta a \textit{degenerazione di emettitore}. 
 \section{Prima versione} % senza degenerazione emitter, solo trattazione teorica non realizzato in lab
-\subsection{Schema} %?mettere
+\label{CEv1_cap}
+Questo schema è stato discusso solo dal punto di vista teorico. Di seguito si riportano lo schema e l'analisi del circuito. 
+\subsection{Schema} 
+Dato che faremo solo un'analisi teorica, trascuriamo sia il valore delle resistenze che il valore delle alimentazioni. Lo schema di riferimento è riportato in figura \ref{figura:CEv1}.
+\begin{figure}[h]
+\centering
+\includegraphics[height=7.9cm]{immagini/CEv1}
+\caption{Schema del più semplice \textit{Common Emitter amplifier} realizzabile.}
+\label{figura:CEv1}
+\end{figure}
 \subsection{Analisi del circuito} 
-\section{Seconda versione} % con degenerazione emitter, alimentazione duale
-\subsection{Punto di lavoro} 
+Consideriamo lo schema precedente. La determinazione del punto di lavoro non dà problemi. Passiamo allora all'analisi di piccolo segnale: per semplicità il condensatore diventa un cortocircuito, l'alimentazione $V_{CC}$ viene sostituita con la massa e al posto del transistor abbiamo il suo modello per piccolo segnale a bassa frequenza. Lo schema diventa quello mostrato in figura \ref{figura:CEv1_ps}.
+\begin{figure}[h]
+\centering
+\includegraphics[height=8.7cm]{immagini/CEv1_ps}
+\caption{Schema per l'analisi di piccolo segnale.}
+\label{figura:CEv1_ps}
+\end{figure}
+\\La tensione $v_B$ è pari alla tensione in ingresso $v_i$, dato che nel circuito di sinistra non circola corrente. Per quanto riguarda il circuito di destra, facciamo un bilancio di correnti al nodo del collettore:
+\\[2pt]\indent $\displaystyle{i_C=i=g_m v_{BE}=\frac{0V-v_c}{R_C}}$
+\\[2pt]Sappiamo però che $v_B=v_i$, $v_C=v_o$ e $v_E=0V$ perché questo nodo si trova a massa. L'equazione precedente si può riscrivere come:
+\\[2pt]\indent $\displaystyle{g_m v_i=\frac{-v_o}{R_C}}$
+\\[2pt]A questo punto possiamo calcolare facilmente la funzione di trasferimento del circuito, che risulta:
+\\[2pt]\indent $\displaystyle{\frac{v_o}{v_i}=-g_m R_C}$
+\\[2pt]Dato che $g_m R_C\gg 1$, il circuito ha un guadagno in tensione, come ci aspettavamo. Il guadagno dipende dalla resistenza $R_C$ e dalla transconduttanza $g_m$. Quest'ultima introduce però alcuni problemi, perché ricordando che la transconduttanza è definita come:
+\\[2pt]\indent $\displaystyle{g_m=\frac{I_C}{\Phi_T}}$ e che $\displaystyle{\Phi_T=\frac{k_b\cdot T}{q}}$
+\\[2pt]risulta evidente che il guadagno dipende sia dal punto di lavoro del circuito ($I_C$) che dalla temperatura ($T$). Per risolvere il problema, è sufficiente inserire una resistenza fra l'emettitore e massa, ottenendo un \textit{Common Emitter amplifier} con \textit{degenerazione di emettitore}. Questa soluzione sarà presentata nelle sezioni \ref{CEv2_cap} (\textit{Common Emitter amplifier} ad alimentazione duale) e \ref{CEv3_cap} (\textit{Common Emitter amplifier} ad alimentazione singola). 
+\\\indent Dalla funzione di trasferimento possiamo già notare che compare un segno meno: questo introdurrà uno sfasamento di 180° fra il segnale d'ingresso e il segnale d'uscita. Gli amplificatori realizzati saranno perciò \textit{invertenti}.
+\section{Seconda versione} \label{CEv2_cap}% con degenerazione emitter, alimentazione duale
+La prima versione di \textit{Common Emitter amplifier} con degenerazione di emettitore analizzata è quella ad alimentazione duale. Di seguito si riportano lo schema (figura \ref{figura:CEv2}), l'analisi del punto di lavoro e di piccolo segnale, e le misure effettuate su questo circuito. 
+\begin{figure}[h]
+\centering
+\includegraphics[height=11cm]{immagini/CEv2}
+\caption{\textit{Common Emitter amplifier} con degenerazione di emettitore ad alimentazione duale.}
+\label{figura:CEv2}
+\end{figure}
+\subsection{Punto di lavoro} \label{ptolavCEv2}
+Per il punto di lavoro è sufficiente sostituire il generatore di segnale con un cortocircuito. Otteniamo lo schema di figura \ref{figura:CEv2_pl}.
+\begin{figure}[h]
+\centering
+\includegraphics[height=10cm]{immagini/CEv2_pl}
+\caption{Schema del circuito per l'analisi del punto di lavoro.}
+\label{figura:CEv2_pl}
+\end{figure}
+\\Nell'analisi utilizziamo il modello ideale del transistor, perciò assumiamo che $\displaystyle{\beta\rightarrow\infty}$ e che $I_{B}=0A$, di conseguenza la corrente che fluisce nella resistenza è nulla, perciò, per la legge di Ohm, sarà nulla anche la caduta di tensione ai suoi capi, quindi si ricava che $V_{B}=0V$. 
+\\Suppondendo che il transistor si trovi in regione attiva diretta, la tensione $V_{BE}$ fra la base e l'emettitore è pari a circa +0.7V perché la giunzione è polarizzata direttamente. Dato che sappiamo che $V_{B}=0V$, possiamo calcolare per differenza $V_{E}$, dunque $V_{E}=0V-0.7V=-0.7V$.
+\\Calcoliamo la corrente di emettitore con la legge di Ohm: 
+\\[2pt]\indent$\displaystyle{V_E-V_{EE}=R_E\cdot I_E \rightarrow I_E=\frac{V_E-V_{EE}}{R_E}=\frac{-0.7V-(-2V)}{1.8k\Omega}=0.722mA}$
+\\[2pt]Consideriamo il transistor come se fosse un nodo, otteniamo che $I_C+I_B=I_E$, ma dato che $I_{B}$ è nulla, allora $I_C=I_E=0.722mA$.
+\\L'ultima grandezza da determinare è la tensione $V_C$, che è uguale alla tensione $V_o$ dato che l'uscita viene prelevata al collettore. Per ricavarla utilizziamo ancora la legge di Ohm:
+\\[2pt]\indent $\displaystyle{V_C=V_{CC}-R_C\cdot I_C= 10V-\SI{3.9}{k\ohm}\cdot 0.722mA=7.184V}$
+\\Dato che $V_{CB}>0V$, la giunzione base-collettore è polarizzata inversamente, quindi l'ipotesi che il transistor si trovi in regione attiva diretta è verificata. 
+\\Ora che asbbiamo risolto il circuito, calcoliamo anche la transconduttanza:
+\\[2pt]\indent$\displaystyle{g_m=\frac{I_C}{\Phi_T}=\frac{0.722mA}{26mV}=0.0278\frac{A}{V}}$
+\\[3pt]In tabella \ref{table:CEv2_pl} sono riassunte tutte le grandezze ricavate dal punto di lavoro. 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\textbf{V\ped{B}[V]} & \textbf{V\ped{C}[V]} & \textbf{V\ped{E}[V]} & \textbf{I\ped{B}[A]} & \textbf{I\ped{E}[mA]} & \textbf{I\ped{C}[mA]} & \textbf{g\ped{m}[A/V]} \\ 
+		\hline
+		0 & 7.184 & -0.7 & 0 & 0.722 & 0.722 & 0.0278\\ 
+		\hline
+	\end{tabular}
+\caption{Riassunto delle grandezze ricavate dal punto di lavoro del circuito.}
+\label{table:CEv2_pl}
+\end{table}
 \subsection{Analisi di piccolo segnale} 
+Terminato il punto di lavoro, passiamo all'analisi per piccolo segnale. Poniamo le due alimentazioni a massa e sostituiamo al transistor il suo modello per piccolo segnale a bassa frequenza. Lo schema è mostrato in figura \ref{figura:CEv2_ps}.
+\begin{figure}[h]
+\centering
+\includegraphics[height=11cm]{immagini/CEv2_ps}
+\caption{Schema del circuito per l'analisi di piccolo segnale.}
+\label{figura:CEv2_ps}
+\end{figure}
+\\Dato che la base del transistor è isolata, nel circuito di sinistra non circola corrente, perciò non c'è caduta di tensione sulla resistenza $R_B$, quindi la tensione $v_B$ risulta pari alla tensione applicata in ingresso con il generatore $v_i$.
+\\Eseguendo un bilancio di correnti al collettore otteniamo:
+\\[2pt]\indent$i_C=i=g_m\cdot v_{BE}$ ma $\displaystyle{i_C=-\frac{v_C}{R_C}}$ per la legge di Ohm $\displaystyle{\rightarrow -\frac{v_C}{R_C}=g_m\cdot v_{BE}}$
+\\[2pt]Dato che l'uscita è prelevata al collettore, $v_o=v_C$, perciò ricaviamo $v_o$ dall'equazione precedente:
+\begin{equation}
+v_o=-g_m R_C\cdot v_{BE}
+\label{f1}
+\end{equation}
+Sappiamo già che $v_B$ è uguale a $v_i$, dobbiamo ricavare $v_E$. Trattiamo il transistor come se fosse un nodo e facciamo un bilancio di correnti:
+\\[2pt]\indent$\displaystyle{-\frac{v_o}{R_C}=\frac{v_E}{R_E}\rightarrow v_E=-\frac{R_E}{R_C}\cdot v_o}$ 
+\\[2pt]Sostituiamo le grandezze note nell'equazione \eqref{f1}. Otteniamo:
+\\[2pt]\indent$\displaystyle{v_o=-g_mR_C\cdot v_i+g_mR_C \left( -\frac{R_E}{R_C}\cdot v_o \right)=-g_mR_C\cdot v_i-g_mR_E\cdot v_o}$
+\\[2pt]Dall'equazione precedente si può ricavare la funzione di trasferimento del circuito, che risulta:
+\\[2pt]\indent $\displaystyle{\frac{v_o}{v_i}=-\frac{g_mR_C}{1+g_mR_E}\simeq -\frac{R_C}{R_E}}$ per $g_mR_E\gg 1$
+\\[2pt]Rispetto alla soluzione già trattata nella sezione \ref{CEv1_cap}, il guadagno di questo circuito dipende solo debolmente dalla transconduttanza, il cui contributo è molto spesso trascurabile. Nella funzione di trasferimento rimane il segno meno, perciò il segnale in uscita sarà sfasato di 180° rispetto al segnale in ingresso: l'amplificatore realizzato sarà pertanto invertente. 
+\\\indent Il guadagno dipende dal rapporto fra la resistenza di collettore e la resistenza di emettitore: se $R_C<R_E$ il circuito attenua l'uscita, quindi otteniamo un attenuatore; se $R_C>R_E$ l'uscita viene amplificata, perciò il circuito è un amplificatore; infine, se $R_C=R_E$ il circuito ha guadagno unitario, di conseguenza si comporta come un buffer. Nel nostro circuito, ci aspettiamo un guadagno, in modulo, di:
+\\[2pt]\indent$\displaystyle{\frac{R_C}{R_E}=\frac{\SI{3.9}{k\ohm}}{\SI{1.8}{k\ohm}}\simeq 2.17}$
 \subsection{Componenti, strumenti e misure} 
-\section{Terza versione} % con degenerazione emitter, alimentazione singola (in piccolo segnale aggiungi già il condensatore)
+Il circuito, mostrato in figura \ref{figura:fotoCEv2_pl} con le connessioni utilizzate per lo studio del punto di lavoro, è stato realizzato su una breadboard utilizzando questi componenti:
+\begin{itemize}
+\item transistor bipolare NPN 2N3904;
+\item una resistenza da \SI{270}{\ohm} per $R_B$;
+\item una resistenza da \SI{3.9}{k\ohm} per $R_C$;
+\item una resistenza da \SI{1.8}{k\ohm} per $R_E$;
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[height=9cm]{immagini/fotoCEv2_pl}
+\caption{\textit{Common Emitter amplifier} con le connessioni per lo studio del punto di lavoro.}
+\label{figura:fotoCEv2_pl}
+\end{figure}
+Per le misure e le analisi, sono stati utilizzati i seguenti strumenti:
+\begin{itemize}
+\item alimentatore da banco, con alimentazione positiva impostata a 10V ed alimentazione negativa a -2V, entrambe con limite in corrente di 50mA;
+\item generatore di forme d'onda;
+\item multimetro da banco;
+\item oscilloscopio a due canali.
+\end{itemize}
+Per prima cosa, con il multimetro si sono misurati i valori delle resistenze. I valori ottenuti sono mostrati in tabella \ref{table:CEv2_comp}.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\cline{2-3} 
+	\multicolumn{1}{c|}{} & \textbf{Valore nominale} & \textbf{Valore misurato}\\ 
+		%\hline
+		%{} & \textbf{Valore nominale} & \textbf{Valore misurato} \\ 
+		\hline
+		$\mathbf{R_B}$ & \SI{270}{\ohm} & \SI{270}{\ohm} \\ 
+		\hline
+		$\mathbf{R_C}$& \SI{3.9}{k\ohm} & \SI{3.907}{k\ohm} \\ 
+		\hline
+		$\mathbf{R_E}$& \SI{1.8}{k\ohm} & \SI{1.807}{k\ohm} \\ 
+		\hline
+		$\mathbf{V_{BE}}$& $\mathrm{ \simeq0.7V}$ & 0.699V \\ 
+		\hline
+		$\mathbf{V_{BC}}$& $\mathrm{ \simeq0.7V}$  & 0.659V \\ 
+		\hline
+	\end{tabular}
+\caption{Grandezze misurate prima di realizzare il circuito.}
+\label{table:CEv2_comp}
+\end{table}
+\\Dopo aver posizionato tutti i componenti sulla breadboard, è stato fatto lo studio del punto di lavoro del circuito. Non è stato applicato il segnale e il terminale della resistenza $R_B$ non connesso alla base del transistor è stato collegato a massa. Il circuito risultante è quello già incontrato nella figura \ref{figura:fotoCEv2_pl}.
+\\\indent Abbiamo misurato le tensioni dei tre terminali del transistor, poi abbiamo ricavato le correnti di tutti i rami utlilizzando la legge di Ohm. Infine, abbiamo verificato con la legge di Kirchhoff che il bilancio delle correnti del transistor, visto come un nodo, era rispettato. I risultati sono riportati in tabella \ref{table:EFv1_pl_mis}. 
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\textbf{V\ped{B}[mV]} & \textbf{V\ped{C}[V]} & \textbf{V\ped{E}[V]} & \textbf{I\ped{B}[mA]} & \textbf{I\ped{E}[mA]} & \textbf{I\ped{C}[mA]} & \textbf{g\ped{m}[A/V]} \\ 
+		\hline
+		-1.167 & 7.106 & -0.653 & 0.004 & 0.745 & 0.741 & 0.0287\\ 
+		\hline
+	\end{tabular}
+\caption{Grandezze misurate dallo studio del punto di lavoro del circuito.}
+\label{table:EFv1_pl_mis}
+\end{table}
+\\I valori ottenuti sono confrontabili con i risultati teorici calcolati nella sezione \ref{ptolavCEv2}. Come succede anche per i circuiti già analizzati, sia $V_B$ che $I_B$ non sono nulle, ma il loro valore (in modulo) è molto piccolo, perciò nel punto di lavoro possiamo trascurarle.
+\\\indent Dalla legge di Kirchhoff abbiamo che $I_B+I_C=I_E\rightarrow 0.004mA+0.741mA=0.745mA$, ovvero il bilancio delle correnti sul transistor è verificato.
+\\Il guadagno che ci aspettiamo è:
+\\[2pt]\indent$\displaystyle{\frac{R_C}{R_E}=\frac{\SI{3.907}{k\ohm}}{\SI{1.807}{k\ohm}}= 2.16}$
+\\[2pt]ovvero 0.5\% in meno del guadagno teorico.
+\\Applichiamo in ingresso un segnale sinusoidale con frequenza $f=\SI{1}{k\hertz}$ e tensione picco-picco $V_{PP}$ di 1V. La tensione in ingresso e la tensione in uscita sono state visualizzate collegando opportunamente le sonde dell'oscilloscopio, in figura \ref{figura:oscillo4} è mostrato il grafico dei due segnali accoppiati in DC mentre in figura \ref{figura:oscillo5} l'ingresso e l'uscita sono accoppiate in AC.
+\begin{figure}[h]
+\centering
+\includegraphics[height=8cm]{immagini/oscillo4}
+\caption{Grafico della tensione in ingresso (CH1) e della tensione in uscita (CH2) accoppiate in DC.}
+\label{figura:oscillo4}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[height=8cm]{immagini/oscillo5}
+\caption{Grafico della tensione in ingresso (CH1) e della tensione in uscita (CH2) accoppiate in AC.}
+\label{figura:oscillo5}
+\end{figure}
+\\\\Dai due grafici è evidente che l'amplificatore inverte l'ingresso, perché i due segnali sono in controfase: quando l'ingresso è positivo l'uscita è negativa e viceversa. L'uscita è circa il doppio, in modulo, del segnale applicato in ingresso. 
+\section{Terza versione} \label{CEv3_cap} % con degenerazione emitter, alimentazione singola (in piccolo segnale aggiungi già il condensatore)
 \subsection{Punto di lavoro} 
 \subsection{Analisi di piccolo segnale}  
 \subsection{Componenti, strumenti e misure} 
