@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  12 AUG 2022 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  13 AUG 2022 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1576,7 +1576,7 @@ Package pdftex.def Info: immagini/fotoCEv3.jpg  used on input line 690.
 File: immagini/oscillo6.png Graphic file (type png)
 <use immagini/oscillo6.png>
 Package pdftex.def Info: immagini/oscillo6.png  used on input line 752.
-(pdftex.def)             Requested size: 374.62868pt x 224.7766pt.
+(pdftex.def)             Requested size: 355.64912pt x 213.39566pt.
 <immagini/oscillo7.png, id=499, 803.0pt x 481.8pt>
 File: immagini/oscillo7.png Graphic file (type png)
 <use immagini/oscillo7.png>
@@ -1626,10 +1626,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [35 <./immagini/oscillo10.PNG (PNG copy)> <./immagini/oscillo11.PNG (PNG copy)>
 ] [36 <./immagini/graficoCEv3.png>]
 Capitolo 3.
+<immagini/741pinout.png, id=549, 1351.0475pt x 602.25pt>
+File: immagini/741pinout.png Graphic file (type png)
+<use immagini/741pinout.png>
+Package pdftex.def Info: immagini/741pinout.png  used on input line 826.
+(pdftex.def)             Requested size: 351.05792pt x 156.49014pt.
 [37
 
 
-] (./relazione.aux)
+ <./immagini/741pinout.png (PNG copy)>]
+<immagini/amplinv.png, id=556, 1420.1055pt x 800.9925pt>
+File: immagini/amplinv.png Graphic file (type png)
+<use immagini/amplinv.png>
+Package pdftex.def Info: immagini/amplinv.png  used on input line 835.
+(pdftex.def)             Requested size: 378.31972pt x 213.39566pt.
+ [38 <./immagini/amplinv.png>]
+<immagini/foto_amplinv.jpg, id=566, 1194.4625pt x 699.61375pt>
+File: immagini/foto_amplinv.jpg Graphic file (type jpg)
+<use immagini/foto_amplinv.jpg>
+Package pdftex.def Info: immagini/foto_amplinv.jpg  used on input line 869.
+(pdftex.def)             Requested size: 437.20544pt x 256.0748pt.
+<immagini/oscillo12.png, id=570, 803.0pt x 481.8pt>
+File: immagini/oscillo12.png Graphic file (type png)
+<use immagini/oscillo12.png>
+Package pdftex.def Info: immagini/oscillo12.png  used on input line 894.
+(pdftex.def)             Requested size: 426.801pt x 256.0748pt.
+<immagini/oscillo13.png, id=571, 803.0pt x 481.8pt>
+File: immagini/oscillo13.png Graphic file (type png)
+<use immagini/oscillo13.png>
+Package pdftex.def Info: immagini/oscillo13.png  used on input line 900.
+(pdftex.def)             Requested size: 426.801pt x 256.0748pt.
+<immagini/oscillo14.png, id=572, 803.0pt x 481.8pt>
+File: immagini/oscillo14.png Graphic file (type png)
+<use immagini/oscillo14.png>
+Package pdftex.def Info: immagini/oscillo14.png  used on input line 909.
+(pdftex.def)             Requested size: 426.801pt x 256.0748pt.
+
+[39 <./immagini/foto_amplinv.jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[40 <./immagini/oscillo12.PNG (PNG copy)>] [41 <./immagini/oscillo13.PNG (PNG c
+opy)> <./immagini/oscillo14.PNG (PNG copy)>] [42] (./relazione.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1637,10 +1675,10 @@ Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 21FAF51A27009A11903E7EBAF0A166AD;5604.
  ) 
 Here is how much of TeX's memory you used:
- 30536 strings out of 478353
- 603251 string characters out of 5852101
- 890770 words of memory out of 5000000
- 48018 multiletter control sequences out of 15000+600000
+ 30625 strings out of 478353
+ 605302 string characters out of 5852101
+ 891489 words of memory out of 5000000
+ 48089 multiletter control sequences out of 15000+600000
  409912 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,133p,1139b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1656,16 +1694,18 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/20
 21/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss
-10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive
-/2021/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfrm1000.pfb>
-Output written on relazione.pdf (38 pages, 3474820 bytes).
+c/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2
+021/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2021/texmf-dist/fon
+ts/type1/public/lm/lmssbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
+cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
+fbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
+b>
+Output written on relazione.pdf (43 pages, 3874373 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 465 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 553 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 495 words of extra memory for PDF output out of 10000 (max. 10000000)
 

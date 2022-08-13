@@ -662,7 +662,7 @@ Il punto di lavoro è molto simile a quello del \textit{Common Emitter amplifier
 \label{table:CEv3_pl}
 \end{table}
 \subsection{Analisi di piccolo segnale}  
-Dopo il punto di lavoro passiamo all'analisi per piccolo segnale. Analogamente a quanto fatto per l'\textit{Emitter follower} ad alimentazione singola, sostituiamo l'alimentazione positiva a 10V con la massa, al posto del transistor utilizziamo il suo modello per piccolo segnale a bassa frequenza ed il condensatore, per ora, non lo sostituiamo con un cortocircuito. Lo schema diventa pertanto quello mostrato in figura \ref{figura:CEv3_ps}.
+Dopo il punto di lavoro, passiamo all'analisi per piccolo segnale. Analogamente a quanto fatto per l'\textit{Emitter follower} ad alimentazione singola, sostituiamo l'alimentazione positiva a 10V con la massa, al posto del transistor utilizziamo il suo modello per piccolo segnale a bassa frequenza ed il condensatore, per ora, non lo sostituiamo con un cortocircuito. Lo schema diventa pertanto quello mostrato in figura \ref{figura:CEv3_ps}.
 \begin{figure}[h]
 \centering
 \includegraphics[height=10cm]{immagini/CEv3_ps}
@@ -682,7 +682,7 @@ Il circuito, di cui si riporta la fotografia (figura \ref{figura:fotoCEv3}), è 
 \item una resistenza da \SI{1.8}{k\ohm} per $R_E$;
 \item due resistenze, una da \SI{82}{k\ohm} ($R_{11}$) ed una da \SI{27}{k\ohm} ($R_{12}$) connesse in serie, per realizzare la resistenza $R_1$ da \SI{109}{k\ohm};
 \item una resistenza da \SI{12}{k\ohm} per $R_2$;
-\item un condensatore da \SI{1}{\mu\farad};
+\item un condensatore da \SI{1}{\mu\farad}.
 \end{itemize}
 Per quanto riguarda $R_1$ ed $R_2$, non è stato possibile utilizzare una resistenza del valore indicato: con questi componenti otteniamo un fattore di partizione di 0.099, contro un valore teorico di 0.08. Perciò, le grandezze del punto di lavoro che misureremo saranno un po' diverse rispetto a quanto calcolato nella sezione \ref{CEv3_plcap}.
 \begin{figure}[h]
@@ -745,11 +745,11 @@ Come per gli altri circuiti, per prima cosa andiamo a misurare con il multimetro
 \caption{Grandezze misurate dallo studio del punto di lavoro del circuito.}
 \label{table:EFv2_3_pl_mis}
 \end{table}
-\\I valori ottenuti sono leggermente maggiori di quelli che abbiamo calcolato nell'analisi teorica, ma questo non deve stupirci perché il fattore di partizione del circuito realizzato è maggiore di quello teorico.
-\\Dopo lo studio del punto di lavoro, con il generatore di forme d'onda applichiamo in ingresso al circuito delle sinusoidi. Collegando al circuito le sonde dell'oscilloscopio, osserviamo il grafico della tensione in ingresso e della tensione in uscita. La prima forma d'onda utilizzata è una sinusoide di frequenza $f=\SI{1}{k\hertz}$ e tensione picco-picco $V_{PP}$ di 100mV. Il grafico è riportato in figura \ref{figura:oscillo6}, i due segnali sono accoppiati in AC.
+\\I valori ottenuti sono leggermente maggiori di quelli che abbiamo calcolato nell'analisi teorica, ma questo non deve stupirci perché il fattore di partizione del circuito realizzato è maggiore di quello teorico. Il bilancio di correnti sul transistor è: $I_B+I_C=0.002mA+0.195mA=0.197mA$, che risulta corretto dato che commentiamo un errore dell'ordine del \textmu A.
+\\\indent Dopo lo studio del punto di lavoro, con il generatore di forme d'onda applichiamo in ingresso al circuito delle sinusoidi. Collegando al circuito le sonde dell'oscilloscopio, osserviamo il grafico della tensione in ingresso e della tensione in uscita. La prima forma d'onda utilizzata è una sinusoide di frequenza $f=\SI{1}{k\hertz}$ e tensione picco-picco $V_{PP}$ di 100mV. Il grafico è riportato in figura \ref{figura:oscillo6}, i due segnali sono accoppiati in AC.
 \begin{figure}[h]
 \centering
-\includegraphics[height=7.9cm]{immagini/oscillo6}
+\includegraphics[height=7.5cm]{immagini/oscillo6}
 \caption{Grafico della tensione in ingresso (CH1) e della tensione in uscita (CH2) al circuito.}
 \label{figura:oscillo6}
 \end{figure}
@@ -783,7 +783,7 @@ Come per gli altri circuiti, per prima cosa andiamo a misurare con il multimetro
 \\[2pt]\indent $\displaystyle{R_1\parallelsum R_2=R_{eq}=\frac{R_1\cdot R_2}{R_1+R_2}=\frac{\SI{109}{k\ohm}\cdot\SI{12}{k\ohm}}{\SI{109}{k\ohm}+\SI{12}{k\ohm}}=\SI{10.810}{k\ohm}}$
 \\[2pt]La frequenza di taglio con i parametri $R_1$, $R_2$ e $C$ del nostro filtro è $f_T=\SI{14.72}{\hertz}$, che corrisponde ad una pulsazione di $\omega_T=\SI{92.49}{\radian/s}$. 
 \\\indent Proviamo quindi ad applicare due segnali sinusoidali, entrambi con tensione picco-picco di 100mV, la frequenza del primo segnale è \SI{10}{\hertz}, corrispondente ad una pulsazione di \SI{62.83}{\radian/s}, invece la frequenza del secondo è \SI{10}{k\hertz}, corrispondente ad una pulsazione di \SI{6283.19}{\radian/s}. Ci aspettiamo che con il primo segnale il circuito non funzionerà come un \textit{Common Emitter amplifier}, perché l'effetto del filtro non sarà trascurabile, dato che lavoriamo ad una frequenza minore di quella di taglio; al contrario, con il secondo segnale il circuito dovrebbe funzionare correttamente, dato che siamo ad una frequenza molto maggiore rispetto a quella di taglio.
-\\Nei grafici seguenti vediamo la tensione in ingresso e la tensione in uscita quando applichiamo il primo segnale (figura \ref{figura:oscillo10}) e quando invece applichiamo il secondo (\ref{figura:oscillo11}).
+\\\indent Nei grafici seguenti vediamo la tensione in ingresso e la tensione in uscita quando applichiamo il primo segnale (figura \ref{figura:oscillo10}) e quando invece applichiamo il secondo (\ref{figura:oscillo11}).
 \begin{figure}[h]
 \centering
 \includegraphics[height=8.4cm]{immagini/oscillo10}
@@ -796,7 +796,7 @@ Come per gli altri circuiti, per prima cosa andiamo a misurare con il multimetro
 \caption{Grafico della tensione in ingresso e in uscita al circuito con il secondo segnale.}
 \label{figura:oscillo11}
 \end{figure}
-\\Con il secondo segnale il circuito funziona correttamente. Con il primo segnale invece no, in particolare, l'uscita è sia attenuata che sfasata rispetto al segnale in ingresso. Per capire meglio cosa succede, è utile guardare il diagramma di Bode del filtro passa-alto. Questi sono rappresentati nella figura seguente (figura \ref{figura:grafico2}), sono inoltre riportati i valori di modulo e fase in corrispondenza della pulsazione di taglio e delle pulsazioni dei due segnali utilizzati.
+\\Con il secondo segnale il circuito funziona correttamente. Con il primo segnale invece no, in particolare, l'uscita è sia attenuata che sfasata rispetto al segnale in ingresso. Per capire meglio cosa succede, è utile guardare il diagramma di Bode di modulo e fase del filtro passa-alto. Questo è rappresentato nella figura seguente (figura \ref{figura:grafico2}), sono inoltre riportati i valori di modulo e fase in corrispondenza della pulsazione di taglio e delle pulsazioni dei due segnali utilizzati.
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{immagini/graficoCEv3}
@@ -812,11 +812,107 @@ Come per gli altri circuiti, per prima cosa andiamo a misurare con il multimetro
 \newpage
 \chapter{Circuiti 3 e 4: Amplificatore operazionale \textmu A741}
 \section{Introduzione} 
-\section{Amplificatore invertente} 
-\subsection{Schema} %?mettere
+I due circuiti discussi di seguito sono stati realizzati utilizzando un amplificatore operazionale \textit{general purpose}, il \textmu A741. Per primo abbiamo realizzato un amplificatore invertente (sezione \ref{amplinv_cap}), poi, aggiungendo un condensatore al circuito precedente, abbiamo ottenuto un integratore (sezione \ref{int_cap}). Nell'immagine sottostante, la figura \ref{figura:741}, si possono vedere i numeri e la funzione di ogni terminale. Per i nostri circuiti, connettermo i terminali in questo modo:
+\begin{itemize}
+\item il terminale numero 8 è \textit{Not Connected}, perciò non viene collegato a nulla;
+\item i terminali 7 e 4 sono collegati rispettivamente all'alimentazione positiva e all'alimentazione negativa;
+\item i terminali 1 e 5 servono per compensare l'offset, li lasceremo floating (in generale è una cosa che non andrebbe fatta, perché non abbiamo modo di sapere a che tensione si troveranno);
+\item il terminale 3, ovvero l'ingresso non-invertente, lo connettiamo a massa;
+\item il terminale 2 è l'ingresso invertente. A questo terminale applicheremo, anche se non direttamente, il segnale; 
+\item il terminale 6 serve per prelevare l'output.
+\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[height=5.5cm]{immagini/741pinout}
+\caption{Package e funzione dei pin del \textmu A741.}
+\label{figura:741}
+\end{figure}
+\section{Amplificatore invertente} \label{amplinv_cap} 
+Il primo circuito realizzato utilizzando il \textmu A741 è l'amplificatore invertente. Di seguito si riportano lo schema, l'analisi del circuito e le misure effettuate su di questo.
+\subsection{Schema} 
+\begin{figure}[h]
+\centering
+\includegraphics[height=7.5cm]{immagini/amplinv}
+\caption{Schema dell'amplificatore invertente.}
+\label{figura:amplinv}
+\end{figure}
 \subsection{Analisi del circuito} 
+Il circuito è retroazionato negativamente, perché l'uscita viene riportata all'ingresso invertente dell'amplificatore operazionale. Per ricavare la funzione di trasferimento del circuito è sufficiente fare un bilancio di correnti all'ingresso invertente:
+\\[2pt]\indent $I_1=I_2+I_{in^-}$
+\\[2pt]La corrente in ingresso all'OPAMP è molto piccola, idealmente $I_{in^+}=I_{in^-}\rightarrow 0A$. Perciò l'equazione precedente diventa:
+\\\indent $\displaystyle{I_1=I_2}$
+\\Utilizzando la legge di Ohm, le due correnti si possono esprimere come:
+\\[2pt]\indent $\displaystyle{\frac{V^--V_i}{R_1}=\frac{V_o-V^-}{R2}}$
+\\[2pt]Se un circuito è retroazionato negativamente, $V^+=V^-$ per il principio del cortocircuito virtuale. Dato che $V^+$ è a massa, la sua tensione è di 0V, di conseguenza anche $V^-$ si troverà a questa tensione. L'equzione precedente diventa:
+\\[2pt]\indent $\displaystyle{\frac{-V_i}{R_1}=\frac{V_o}{R2}}$
+\\[2pt]Tramite quest'equazione è facile ricavare la funzione di trasferimento del circuito, che risulta:
+\\[2pt]\indent $\displaystyle{\frac{V_o}{V_i}=-\frac{R_2}{R_1}}$
+\\[2pt]Come suggerisce il nome del circuito, è un amplificatore perché se $R_2>R_1$ il segnale in ingresso viene amplificato. È inoltre invertente, perché compare un segno meno nella funzione di trasferimento, pertanto ingresso e uscita saranno in controfase (sfasate di 180°).
+\\Per il nostro circuito la resistenza $R_1$ è di \SI{1.8}{k\ohm} e la resistenza $R_2$ è di \SI{3.9}{k\ohm}, perciò il guadagno, in modulo, vale 2.17.
 \subsection{Componenti, strumenti e misure} 
-\section{Integratore} 
+Il circuito è stato realizzato su una breadboard utilizzando questi componenti:
+\begin{itemize}
+\item una resistenza da \SI{3.9}{k\ohm} per $R_2$;
+\item una resistenza da \SI{1.8}{k\ohm} per $R_1$;
+\item amplificatore operazionale \textmu A741.
+\end{itemize}
+Per le misure e le analisi, sono stati utilizzati i seguenti strumenti:
+\begin{itemize}
+\item alimentatore da banco, con alimentazione positiva impostata a 5V ed alimentazione negativa a -5V, entrambe con limite in corrente di 50mA;
+\item generatore di forme d'onda;
+\item multimetro da banco;
+\item oscilloscopio a due canali.
+\end{itemize}
+In figura \ref{figura:foto_amplinv} è mostrata una fotografia del circuito in cui possiamo vedere dove applichiamo il segnale. Nella fotografia, il pin numero 1 del \textmu A741 si trova in basso a sinistra.
+\begin{figure}[h]
+\centering
+\includegraphics[height=9cm]{immagini/foto_amplinv}
+\caption{Amplificatore invertente con \textmu A741.}
+\label{figura:foto_amplinv}
+\end{figure}
+\\Per prima cosa, con il multimetro si sono misurati i valori delle resistenze. I valori ottenuti sono mostrati in tabella \ref{table:amplinv_comp}.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\cline{2-3} 
+	\multicolumn{1}{c|}{} & \textbf{Valore nominale} & \textbf{Valore misurato}\\ 
+		%\hline
+		%{} & \textbf{Valore nominale} & \textbf{Valore misurato} \\ 
+		\hline
+		$\mathbf{R_1}$& \SI{1.8}{k\ohm} & \SI{1.807}{k\ohm} \\ 
+		\hline
+		$\mathbf{R_2}$& \SI{3.9}{k\ohm} & \SI{3.907}{k\ohm} \\ 
+		\hline
+	\end{tabular}
+\caption{Grandezze misurate prima di realizzare il circuito.}
+\label{table:amplinv_comp}
+\end{table}
+\\Dopo aver posizionato tutti i componenti sulla breadboard, abbiamo collegato le sonde dell'oscilloscopio, successivamente è stato applicato il segnale. La sonda del canale 1 è stata collegata al terminale della resistenza $R_1$ non collegato al pin 2 del \textmu A741; la sonda del canale 2 è invece stata collegata al terminale della resistenza $R_2$ connesso con il pin 6 dell'OPAMP. Con il primo canale visualizziamo la tensione in ingresso, mentre con il secondo la tensione in uscita al circuito. 
+\\\indent Dal rapporto fra le resistenza misurate, ci aspettiamo un guadagno di 2.16. Sono state applicate due sinusoidi, entrambe di frequenza \SI{1}{k\hertz}, ma con diversa tensione picco-picco: il primo segnale ha una $V_{PP}$ di 1V, il grafico è la figura \ref{figura:oscillo12}, il secondo segnale ha invece una $V_{PP}$ di 2V, il grafico è la figura \ref{figura:oscillo13}.
+\begin{figure}[h]
+\centering
+\includegraphics[height=9cm]{immagini/oscillo12}
+\caption{Grafico della tensione in ingresso e in uscita al circuito con il secondo segnale.}
+\label{figura:oscillo12}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[height=9cm]{immagini/oscillo13}
+\caption{Grafico della tensione in ingresso e in uscita al circuito con il primo segnale.}
+\label{figura:oscillo13}
+\end{figure}
+\\Per quanto riguarda il primo segnale, se facciamo il rapporto fra la misura della tensione picco-picco del segnale in ingresso e la misura della tensione picco-picco del segnale in uscita otteniamo un valore di 2.18, che è vicinissimo al guadagno che dobbiamo ottenere dal circuito.
+\\\indent Con il secondo segnale, invece, l'uscita satura. Infatti, l'uscita un amplificatore operazionale ideale non può mai superare la tensione di alimentazione, ma per un amplificatore operazionale reale, la saturazione subentra già prima che venga raggiunto questo limite. Per il nostro OPAMP, la tensione di saturazione è circa di +4V e -3.5V, perciò il suo comportamento non è simmetrico.
+\\Per visualizzare ancora meglio il fenomeno della saturazione, si può utilizzare un'onda triangolare piuttosto che una sinusoide. La frequenza usata è ancora di \SI{1}{k\hertz}, ma la tensione picco-picco è di 10V.
+\begin{figure}[h!]
+\centering
+\includegraphics[height=9cm]{immagini/oscillo14}
+\caption{Grafico della saturazione con un'onda triangolare in ingresso.}
+\label{figura:oscillo14}
+\end{figure}
+\\Dal grafico precedente, si può anche vedere un'altra non-idealità che un amplificatore operazionale reale ha: l'offset in tensione, seppur piccolo, è diverso da 0V. Infatti, il tratto di retta del segnale in uscita non passa per l'origine, ma lo taglia ad un valore poco maggiore di 0V.
+\section{Integratore} \label{int_cap}
+Se al cto pre mettiamo c in parallelo a r2, otteniamo un integratore.
 \subsection{Schema} %?mettere
 \subsection{Analisi del circuito} 
 \subsection{Componenti, strumenti e misure} 
