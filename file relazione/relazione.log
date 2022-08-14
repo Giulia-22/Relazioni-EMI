@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  13 AUG 2022 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  14 AUG 2022 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1655,19 +1655,38 @@ Package pdftex.def Info: immagini/oscillo12.png  used on input line 894.
 File: immagini/oscillo13.png Graphic file (type png)
 <use immagini/oscillo13.png>
 Package pdftex.def Info: immagini/oscillo13.png  used on input line 900.
-(pdftex.def)             Requested size: 426.801pt x 256.0748pt.
+(pdftex.def)             Requested size: 422.04692pt x 253.22934pt.
 <immagini/oscillo14.png, id=572, 803.0pt x 481.8pt>
 File: immagini/oscillo14.png Graphic file (type png)
 <use immagini/oscillo14.png>
 Package pdftex.def Info: immagini/oscillo14.png  used on input line 909.
-(pdftex.def)             Requested size: 426.801pt x 256.0748pt.
+(pdftex.def)             Requested size: 422.04692pt x 253.22934pt.
 
 [39 <./immagini/foto_amplinv.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [40 <./immagini/oscillo12.PNG (PNG copy)>] [41 <./immagini/oscillo13.PNG (PNG c
-opy)> <./immagini/oscillo14.PNG (PNG copy)>] [42] (./relazione.aux)
+opy)> <./immagini/oscillo14.PNG (PNG copy)>]
+<immagini/int.png, id=591, 1430.946pt x 1069.596pt>
+File: immagini/int.png Graphic file (type png)
+<use immagini/int.png>
+Package pdftex.def Info: immagini/int.png  used on input line 919.
+(pdftex.def)             Requested size: 312.12346pt x 233.3125pt.
+ [42 <./immagini/int.png>]
+<immagini/foto_int.jpg, id=601, 1194.4625pt x 748.7975pt>
+File: immagini/foto_int.jpg Graphic file (type jpg)
+<use immagini/foto_int.jpg>
+Package pdftex.def Info: immagini/foto_int.jpg  used on input line 963.
+(pdftex.def)             Requested size: 317.71574pt x 199.16928pt.
+<immagini/oscillo15.png, id=604, 803.0pt x 481.8pt>
+File: immagini/oscillo15.png Graphic file (type png)
+<use immagini/oscillo15.png>
+Package pdftex.def Info: immagini/oscillo15.png  used on input line 971.
+(pdftex.def)             Requested size: 331.94pt x 199.16928pt.
+ [43]
+[44 <./immagini/foto_int.jpg> <./immagini/oscillo15.PNG (PNG copy)>] [45]
+(./relazione.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1675,10 +1694,10 @@ Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 21FAF51A27009A11903E7EBAF0A166AD;5604.
  ) 
 Here is how much of TeX's memory you used:
- 30625 strings out of 478353
- 605302 string characters out of 5852101
- 891489 words of memory out of 5000000
- 48089 multiletter control sequences out of 15000+600000
+ 30673 strings out of 478353
+ 606302 string characters out of 5852101
+ 891905 words of memory out of 5000000
+ 48127 multiletter control sequences out of 15000+600000
  409912 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,133p,1139b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1702,10 +1721,10 @@ ts/type1/public/lm/lmssbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
 cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
 fbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
 b>
-Output written on relazione.pdf (43 pages, 3874373 bytes).
+Output written on relazione.pdf (46 pages, 4193247 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
- 495 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 736 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 510 words of extra memory for PDF output out of 10000 (max. 10000000)
 

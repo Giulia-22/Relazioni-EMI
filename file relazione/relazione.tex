@@ -777,7 +777,7 @@ Come per gli altri circuiti, per prima cosa andiamo a misurare con il multimetro
 \\Un altro studio che si può fare su questo circuito riguarda il contributo del filtro passa-alto a diverse frequenze. La funzione di trasferimento del filtro nel dominio di Laplace la si può ricavare tramite un bilancio di correnti al nodo B. La tensione in ingresso è $v_i\left(s\right)$ e la tensione in uscita al filtro è $v_B\left(s\right)$. La funzione di trasferimento del filtro è:
 \\[2pt]\indent $\displaystyle{v_B\left(s\right)=\frac{s\left(R_1\parallelsum R_2\right)C}{1+s\left(R_1\parallelsum R_2\right)C}\cdot v_i\left(s\right)}$
 \\[2pt]Se passiamo al regime alternato, dobbiamo sostituire $s$ con $j\omega$, pertanto la funzione di trasferimento risulta: 
-\\[2pt]\indent $\displaystyle{v_B\left(j\omega\right)=\frac{j\omega\left(R_1\parallelsum R_2\right)C}{1+j\omega\left(R_1\parallelsum R_2\right)C}\cdot v_i\left(j\omega\right)}$, con $\displaystyle{\omega=2\pi f}$
+\\[2pt]\indent $\displaystyle{v_B\left(\omega\right)=\frac{j\omega\left(R_1\parallelsum R_2\right)C}{1+j\omega\left(R_1\parallelsum R_2\right)C}\cdot v_i\left(\omega\right)}$, con $\displaystyle{\omega=2\pi f}$
 \\[2pt]Perciò, la tensione della base del transistor, $v_B\left(j\omega\right)$, dipende dalla frequenza alla quale lavoriamo.
 \\Il parallelo delle due resistenze $R_1$ e $R_2$ vale:
 \\[2pt]\indent $\displaystyle{R_1\parallelsum R_2=R_{eq}=\frac{R_1\cdot R_2}{R_1+R_2}=\frac{\SI{109}{k\ohm}\cdot\SI{12}{k\ohm}}{\SI{109}{k\ohm}+\SI{12}{k\ohm}}=\SI{10.810}{k\ohm}}$
@@ -836,7 +836,7 @@ Il primo circuito realizzato utilizzando il \textmu A741 è l'amplificatore inve
 \caption{Schema dell'amplificatore invertente.}
 \label{figura:amplinv}
 \end{figure}
-\subsection{Analisi del circuito} 
+\subsection{Analisi del circuito} \label{amplinv_analisi_cap}
 Il circuito è retroazionato negativamente, perché l'uscita viene riportata all'ingresso invertente dell'amplificatore operazionale. Per ricavare la funzione di trasferimento del circuito è sufficiente fare un bilancio di correnti all'ingresso invertente:
 \\[2pt]\indent $I_1=I_2+I_{in^-}$
 \\[2pt]La corrente in ingresso all'OPAMP è molto piccola, idealmente $I_{in^+}=I_{in^-}\rightarrow 0A$. Perciò l'equazione precedente diventa:
@@ -887,7 +887,7 @@ In figura \ref{figura:foto_amplinv} è mostrata una fotografia del circuito in c
 \caption{Grandezze misurate prima di realizzare il circuito.}
 \label{table:amplinv_comp}
 \end{table}
-\\Dopo aver posizionato tutti i componenti sulla breadboard, abbiamo collegato le sonde dell'oscilloscopio, successivamente è stato applicato il segnale. La sonda del canale 1 è stata collegata al terminale della resistenza $R_1$ non collegato al pin 2 del \textmu A741; la sonda del canale 2 è invece stata collegata al terminale della resistenza $R_2$ connesso con il pin 6 dell'OPAMP. Con il primo canale visualizziamo la tensione in ingresso, mentre con il secondo la tensione in uscita al circuito. 
+\\Dopo aver posizionato tutti i componenti sulla breadboard, è stato applicato il segnale, successivamente abbiamo collegato le sonde dell'oscilloscopio. La sonda del canale 1 è stata collegata al terminale della resistenza $R_1$ non collegato al pin 2 del \textmu A741; la sonda del canale 2 è invece stata collegata al terminale della resistenza $R_2$ connesso con il pin 6 dell'OPAMP. Con il primo canale visualizziamo la tensione in ingresso, mentre con il secondo la tensione in uscita al circuito. 
 \\\indent Dal rapporto fra le resistenza misurate, ci aspettiamo un guadagno di 2.16. Sono state applicate due sinusoidi, entrambe di frequenza \SI{1}{k\hertz}, ma con diversa tensione picco-picco: il primo segnale ha una $V_{PP}$ di 1V, il grafico è la figura \ref{figura:oscillo12}, il secondo segnale ha invece una $V_{PP}$ di 2V, il grafico è la figura \ref{figura:oscillo13}.
 \begin{figure}[h]
 \centering
@@ -897,7 +897,7 @@ In figura \ref{figura:foto_amplinv} è mostrata una fotografia del circuito in c
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[height=9cm]{immagini/oscillo13}
+\includegraphics[height=8.9cm]{immagini/oscillo13}
 \caption{Grafico della tensione in ingresso e in uscita al circuito con il primo segnale.}
 \label{figura:oscillo13}
 \end{figure}
@@ -906,19 +906,89 @@ In figura \ref{figura:foto_amplinv} è mostrata una fotografia del circuito in c
 \\Per visualizzare ancora meglio il fenomeno della saturazione, si può utilizzare un'onda triangolare piuttosto che una sinusoide. La frequenza usata è ancora di \SI{1}{k\hertz}, ma la tensione picco-picco è di 10V.
 \begin{figure}[h!]
 \centering
-\includegraphics[height=9cm]{immagini/oscillo14}
+\includegraphics[height=8.9cm]{immagini/oscillo14}
 \caption{Grafico della saturazione con un'onda triangolare in ingresso.}
 \label{figura:oscillo14}
 \end{figure}
 \\Dal grafico precedente, si può anche vedere un'altra non-idealità che un amplificatore operazionale reale ha: l'offset in tensione, seppur piccolo, è diverso da 0V. Infatti, il tratto di retta del segnale in uscita non passa per l'origine, ma lo taglia ad un valore poco maggiore di 0V.
 \section{Integratore} \label{int_cap}
-Se al cto pre mettiamo c in parallelo a r2, otteniamo un integratore.
-\subsection{Schema} %?mettere
+Se al circuito precedente mettiamo un condensatore in parallelo alla resistenza $R_2$, otteniamo un integratore reale. Di seguito si riportano lo schema, l'analisi del circuito e le misure effettuate su di questo.
+\subsection{Schema}
+\begin{figure}[h]
+\centering
+\includegraphics[height=8.2cm]{immagini/int}
+\caption{Schema dell'integratore reale.}
+\label{figura:int}
+\end{figure}
 \subsection{Analisi del circuito} 
+L'analisi di questo circuito è molto simile a quella dell'amplificatore invertente presentata nella sezione \ref{amplinv_analisi_cap}, solo che per l'integratore dobbiamo esplicitare la dipendenza dalla variabile $s$. Anche in questo caso il circuito è retroazionato negativamente, perché l'uscita viene riportata all'ingresso invertente dell'amplificatore operazionale. 
+\\[2pt]La resistenza $R_2$ e il condensatore $C$ sono in parallelo, pertanto si può calcolare l'impedenza equivalente:
+\\[2pt]\indent$\displaystyle{Z_{eq}=C\parallelsum R_2=\frac{\frac{1}{s\cdot C} \cdot R_2}{\frac{1}{s\cdot C} + R_2}=\frac{\frac{R_2}{s\cdot C}}{\frac{1+s\cdot R_2C}{s\cdot C}}=\frac{R_2}{1+s\cdot R_2C}}$
+\\Per ricavare la funzione di trasferimento del circuito è sufficiente fare un bilancio di correnti all'ingresso invertente. Con $I_2$ si intende la corrente che scorre nell'impedenza equivalente $Z_{eq}$.
+\\[2pt]\indent $I_1=I_2+I_{in^-}$
+\\[2pt]La corrente in ingresso all'OPAMP è molto piccola, idealmente $I_{in^+}=I_{in^-}\rightarrow 0A$. Perciò l'equazione precedente diventa:
+\\\indent $\displaystyle{I_1=I_2}$
+\\Utilizzando la legge di Ohm generalizzata, le correnti si possono esprimere come:
+\\[2pt]\indent $\displaystyle{\frac{V^-(s)-V_i(s)}{R_1}=(V_o(s)-V^-(s))\cdot\frac{1+s\cdot R_2C}{R2}}$
+\\[2pt]Se un circuito è retroazionato negativamente, $V^+=V^-$ per il principio del cortocircuito virtuale. Dato che $V^+$ è a massa, la sua tensione è di 0V, di conseguenza anche $V^-$ si troverà a questa tensione. L'equzione precedente diventa:
+\\[2pt]\indent $\displaystyle{\frac{-V_i(s)}{R_1}=V_o(s)\cdot\frac{1+s\cdot R_2C}{R2}}$
+\\[2pt]Tramite quest'equazione è facile ricavare la funzione di trasferimento del circuito, che risulta:
+\\[2pt]\indent $\displaystyle{\frac{V_o(s)}{V_i(s)}=-\frac{R_2}{R_1}\cdot\frac{1}{1+s\cdot R_2C}}$
+\\[2pt]La funzione di trasferimento ottenuta è quella di un filtro passa-basso, perché al denominatore troviamo $1+s\cdot R_2C$. Vediamo che c'è però anche un fattore di guadagno pari al rapporto fra $R_2$ e $R_1$. Compare anche un segno meno, pertanto l'ingresso e l'uscita sono sfasate di 180°
+\\Se passiamo al regime sinusoidale, sostituiamo $s$ con $j\omega$. La funzione di trasferimento diventa:
+\\[2pt]\indent $\displaystyle{\frac{V_o(\omega)}{V_i(\omega)}=-\frac{R_2}{R_1}\cdot\frac{1}{1+j\omega\cdot R_2C}}$
+\\[2pt]Ipotizzando di lavorare ad una frequenza molto maggiore della frequenza di taglio, ovvero se $f\gg f_T$ e quindi $\displaystyle{f\gg \frac{1}{2\pi\cdot R_2C}\simeq\SI{4081}{\hertz}}$, la funzione di trasferimento si può riscrivere come:
+\\[2pt]\indent$\displaystyle{v_o(\omega)\simeq-\frac{R_2}{R_1}\cdot\frac{1}{j\omega\cdot R_2C}\cdot v_i(\omega)=-\frac{1}{j\omega R_1C}\cdot v_i(\omega)}$
+\\[2pt]Il circuito si chiama integratore perché, se passiamo al dominio del tempo, antitrasformando la funzione di trasferimento, otteniamo:
+\\[2pt]\indent$\displaystyle{v_o(t)=-\frac{1}{R_1C}\cdot\int_{0}^{t}v_i(\tau)d\tau}$
+\\[2pt]Quindi, l'uscita è l'integrale nel tempo del segnale in ingresso, sfasata di 180°.
 \subsection{Componenti, strumenti e misure} 
-
-
-
+Il circuito è stato realizzato su una breadboard utilizzando questi componenti:
+\begin{itemize}
+\item una resistenza da \SI{3.9}{k\ohm} per $R_2$;
+\item una resistenza da \SI{1.8}{k\ohm} per $R_1$;
+\item un condensatore da \SI{10}{n\farad} per $C$;
+\item amplificatore operazionale \textmu A741.
+\end{itemize}
+Per le misure e le analisi, sono stati utilizzati i seguenti strumenti:
+\begin{itemize}
+\item alimentatore da banco, con alimentazione positiva impostata a 5V ed alimentazione negativa a -5V, entrambe con limite in corrente di 50mA;
+\item generatore di forme d'onda;
+\item multimetro da banco;
+\item oscilloscopio a due canali.
+\end{itemize}
+In figura \ref{figura:foto_int} è mostrata una fotografia del circuito in cui possiamo vedere sia dove applichiamo il segnale che dove colleghiamo le due sonde dell'oscilloscopio. Nella fotografia, il pin numero 1 del \textmu A741 si trova in basso a sinistra.
+\begin{figure}[h]
+\centering
+\includegraphics[height=7cm]{immagini/foto_int}
+\caption{Integratore invertente con \textmu A741.}
+\label{figura:foto_int}
+\end{figure}
+\\Stavolta non effettuiamo delle misure sui componenti del circuito perché utilizziamo quelli dell'amplificatore invertente. I valori sono già stati riportati in tabella \ref{table:amplinv_comp}.
+\\\indent Dopo aver posizionato tutti i componenti sulla breadboard, abbiamo applicato il segnale, successivamente abbiamo collegato le sonde dell'oscilloscopio. La forma d'onda utilizzata è un'onda quadra con tensione picco-picco di 1V e frequenza di \SI{100}{k\hertz}. In figura \ref{figura:oscillo15} vediamo il grafico che ci mostra l'oscilloscopio con ingresso l'onda quadra. Va notato che i picchi dovuti a distrurbi sul segnale d'ingresso sono ancor più visibili in uscita, sia a causa dell'amplificazione, che per il guadagno del circuito. 
+\begin{figure}[h!]
+\centering
+\includegraphics[height=7cm]{immagini/oscillo15}
+\caption{Grafico della tensione in ingresso e in uscita al circuito integratore.}
+\label{figura:oscillo15}
+\end{figure}
+\\L'onda quadra può essere vista come una funzione costante a tratti:
+\begin{equation}
+	f(x)=\label{eq1_int}
+	\begin{cases}
+		0.5\indent\;se\;0\le x<T/2 \\
+		-0.5\indent\;se\;T/2\le x<T 
+	\end{cases}
+\end{equation}
+se integriamo questa funzione, otteniamo:
+\begin{equation}
+	F(x)=\label{eq2_int}
+	\begin{cases}
+		~0.5\cdot x + cost\indent\;se\;0\le x<T/2 \\
+		-0.5\cdot x - cost\indent\;se\;T/2\le x<T 
+	\end{cases}
+\end{equation}
+Questa funzione rappresenta un'onda triangolare, com'è visibile anche dal grafico dell'oscilloscopio. Si può anche notare che lo sfasamento fra ingresso e uscita è di 180°, perché nel semiperiodo in cui l'onda quadra è alta, l'onda triangolare decresce, mentre nel semiperiodo in cui l'onda quadra è bassa, l'onda triangolare cresce. Se l'integratore non fosse invertente, ci aspetteremmo il contrario, ovvero se l'onda quadra è alta, l'onda triangolare cresce, al contrario se l'onda quadra è bassa, l'onda triangolare decresce, in accordo con le funzioni \eqref{eq1_int} e \eqref{eq2_int}.
 
 
 %----------------------------------------------------------------------------------------
