@@ -888,17 +888,17 @@ In figura \ref{figura:foto_amplinv} è mostrata una fotografia del circuito in c
 \label{table:amplinv_comp}
 \end{table}
 \\Dopo aver posizionato tutti i componenti sulla breadboard, è stato applicato il segnale, successivamente abbiamo collegato le sonde dell'oscilloscopio. La sonda del canale 1 è stata collegata al terminale della resistenza $R_1$ non collegato al pin 2 del \textmu A741; la sonda del canale 2 è invece stata collegata al terminale della resistenza $R_2$ connesso con il pin 6 dell'OPAMP. Con il primo canale visualizziamo la tensione in ingresso, mentre con il secondo la tensione in uscita al circuito. 
-\\\indent Dal rapporto fra le resistenza misurate, ci aspettiamo un guadagno di 2.16. Sono state applicate due sinusoidi, entrambe di frequenza \SI{1}{k\hertz}, ma con diversa tensione picco-picco: il primo segnale ha una $V_{PP}$ di 1V, il grafico è la figura \ref{figura:oscillo12}, il secondo segnale ha invece una $V_{PP}$ di 2V, il grafico è la figura \ref{figura:oscillo13}.
+\\\indent Dal rapporto fra le resistenze misurate, ci aspettiamo un guadagno di 2.16. Sono state applicate due sinusoidi, entrambe di frequenza \SI{1}{k\hertz}, ma con diversa tensione picco-picco: il primo segnale ha una $V_{PP}$ di 1V, il grafico è la figura \ref{figura:oscillo12}, il secondo segnale ha invece una $V_{PP}$ di 2V, il grafico è la figura \ref{figura:oscillo13}.
 \begin{figure}[h]
 \centering
 \includegraphics[height=9cm]{immagini/oscillo12}
-\caption{Grafico della tensione in ingresso e in uscita al circuito con il secondo segnale.}
+\caption{Grafico della tensione in ingresso e in uscita al circuito con il primo segnale.}
 \label{figura:oscillo12}
 \end{figure}
 \begin{figure}[h]
 \centering
 \includegraphics[height=8.9cm]{immagini/oscillo13}
-\caption{Grafico della tensione in ingresso e in uscita al circuito con il primo segnale.}
+\caption{Grafico della tensione in ingresso e in uscita al circuito con il secondo segnale.}
 \label{figura:oscillo13}
 \end{figure}
 \\Per quanto riguarda il primo segnale, se facciamo il rapporto fra la misura della tensione picco-picco del segnale in ingresso e la misura della tensione picco-picco del segnale in uscita otteniamo un valore di 2.18, che è vicinissimo al guadagno che dobbiamo ottenere dal circuito.
@@ -957,18 +957,18 @@ Per le misure e le analisi, sono stati utilizzati i seguenti strumenti:
 \item multimetro da banco;
 \item oscilloscopio a due canali.
 \end{itemize}
-In figura \ref{figura:foto_int} è mostrata una fotografia del circuito in cui possiamo vedere sia dove applichiamo il segnale che dove colleghiamo le due sonde dell'oscilloscopio. Nella fotografia, il pin numero 1 del \textmu A741 si trova in basso a sinistra.
+In figura \ref{figura:foto_int} è mostrata una fotografia del circuito in cui possiamo vedere sia dove applichiamo il segnale, che dove colleghiamo le due sonde dell'oscilloscopio. Nella fotografia, il pin numero 1 del \textmu A741 si trova in basso a sinistra.
 \begin{figure}[h]
 \centering
-\includegraphics[height=7cm]{immagini/foto_int}
+\includegraphics[height=7.2cm]{immagini/foto_int}
 \caption{Integratore invertente con \textmu A741.}
 \label{figura:foto_int}
 \end{figure}
 \\Stavolta non effettuiamo delle misure sui componenti del circuito perché utilizziamo quelli dell'amplificatore invertente. I valori sono già stati riportati in tabella \ref{table:amplinv_comp}.
-\\\indent Dopo aver posizionato tutti i componenti sulla breadboard, abbiamo applicato il segnale, successivamente abbiamo collegato le sonde dell'oscilloscopio. La forma d'onda utilizzata è un'onda quadra con tensione picco-picco di 1V e frequenza di \SI{100}{k\hertz}. In figura \ref{figura:oscillo15} vediamo il grafico che ci mostra l'oscilloscopio con ingresso l'onda quadra. Va notato che i picchi dovuti a distrurbi sul segnale d'ingresso sono ancor più visibili in uscita, sia a causa dell'amplificazione, che per il guadagno del circuito. 
+\\\indent Dopo aver posizionato tutti i componenti sulla breadboard, abbiamo applicato il segnale, successivamente abbiamo collegato le sonde dell'oscilloscopio. La forma d'onda utilizzata è un'onda quadra con tensione picco-picco di 1V e frequenza di \SI{100}{k\hertz}. In figura \ref{figura:oscillo15} vediamo il grafico che ci mostra l'oscilloscopio quando in ingresso abbiamo un'onda quadra. Va notato che i picchi dovuti a distrurbi sul segnale d'ingresso sono ancor più visibili in uscita a causa dell'amplificazione. 
 \begin{figure}[h!]
 \centering
-\includegraphics[height=7cm]{immagini/oscillo15}
+\includegraphics[height=7.2cm]{immagini/oscillo15}
 \caption{Grafico della tensione in ingresso e in uscita al circuito integratore.}
 \label{figura:oscillo15}
 \end{figure}
@@ -985,7 +985,7 @@ se integriamo questa funzione, otteniamo:
 	F(x)=\label{eq2_int}
 	\begin{cases}
 		~0.5\cdot x + cost\indent\;se\;0\le x<T/2 \\
-		-0.5\cdot x - cost\indent\;se\;T/2\le x<T 
+		-0.5\cdot x + cost\indent\;se\;T/2\le x<T 
 	\end{cases}
 \end{equation}
 Questa funzione rappresenta un'onda triangolare, com'è visibile anche dal grafico dell'oscilloscopio. Si può anche notare che lo sfasamento fra ingresso e uscita è di 180°, perché nel semiperiodo in cui l'onda quadra è alta, l'onda triangolare decresce, mentre nel semiperiodo in cui l'onda quadra è bassa, l'onda triangolare cresce. Se l'integratore non fosse invertente, ci aspetteremmo il contrario, ovvero se l'onda quadra è alta, l'onda triangolare cresce, al contrario se l'onda quadra è bassa, l'onda triangolare decresce, in accordo con le funzioni \eqref{eq1_int} e \eqref{eq2_int}.
