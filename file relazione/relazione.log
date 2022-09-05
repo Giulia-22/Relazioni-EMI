@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  15 AUG 2022 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  5 SEP 2022 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,9 +1196,6 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthfirst=\dimen312
 ) (./relazione.aux
 
-LaTeX Warning: Label `table:EFv1_pl_mis' multiply defined.
-
-
 LaTeX Warning: Label `table:EFv2_3_pl_mis' multiply defined.
 
 )
@@ -1365,7 +1362,7 @@ Capitolo 1.
 File: immagini/EFv1.png Graphic file (type png)
 <use immagini/EFv1.png>
 Package pdftex.def Info: immagini/EFv1.png  used on input line 119.
-(pdftex.def)             Requested size: 295.60757pt x 284.52756pt.
+(pdftex.def)             Requested size: 298.56pt x 287.373pt.
 [5
 
  <./immagini/EFv1.png>]
@@ -1373,19 +1370,19 @@ Package pdftex.def Info: immagini/EFv1.png  used on input line 119.
 File: immagini/EFv1_pl.png Graphic file (type png)
 <use immagini/EFv1_pl.png>
 Package pdftex.def Info: immagini/EFv1_pl.png  used on input line 127.
-(pdftex.def)             Requested size: 268.82838pt x 284.52756pt.
+(pdftex.def)             Requested size: 295.71344pt x 312.9803pt.
  [6 <./immagini/EFv1_pl.png>]
 <immagini/EFv1_ps.png, id=251, 1467.081pt x 1149.093pt>
 File: immagini/EFv1_ps.png Graphic file (type png)
 <use immagini/EFv1_ps.png>
 Package pdftex.def Info: immagini/EFv1_ps.png  used on input line 158.
-(pdftex.def)             Requested size: 348.72638pt x 273.14662pt.
+(pdftex.def)             Requested size: 326.94496pt x 256.0748pt.
  [7 <./immagini/EFv1_ps.png>]
-<immagini/fotoEFv1.jpg, id=263, 727.21687pt x 467.49657pt>
+<immagini/fotoEFv1.jpg, id=263, 650.43pt x 351.56343pt>
 File: immagini/fotoEFv1.jpg Graphic file (type jpg)
 <use immagini/fotoEFv1.jpg>
 Package pdftex.def Info: immagini/fotoEFv1.jpg  used on input line 181.
-(pdftex.def)             Requested size: 292.1133pt x 187.78836pt.
+(pdftex.def)             Requested size: 300.04503pt x 162.18062pt.
  [8 <./immagini/fotoEFv1.jpg>]
 <immagini/fotoEFv1_pl.jpg, id=272, 963.6pt x 676.77844pt>
 File: immagini/fotoEFv1_pl.jpg Graphic file (type jpg)
@@ -1396,67 +1393,64 @@ Package pdftex.def Info: immagini/fotoEFv1_pl.jpg  used on input line 220.
 File: immagini/oscillo1.png Graphic file (type png)
 <use immagini/oscillo1.png>
 Package pdftex.def Info: immagini/oscillo1.png  used on input line 242.
-(pdftex.def)             Requested size: 331.94pt x 199.16928pt.
+(pdftex.def)             Requested size: 417.3051pt x 250.38434pt.
 <immagini/graficoEFv1.png, id=280, 362.3136pt x 302.0886pt>
 File: immagini/graficoEFv1.png Graphic file (type png)
 <use immagini/graficoEFv1.png>
 Package pdftex.def Info: immagini/graficoEFv1.png  used on input line 283.
-(pdftex.def)             Requested size: 238.87894pt x 199.16928pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--292
-
- []
-
-[9 <./immagini/fotoEFv1_pl.jpg>] [10 <./immagini/oscillo1.PNG (PNG copy)>]
-[11 <./immagini/graficoEFv1.png (PNG copy)>]
-<immagini/EFv2_1.png, id=305, 1447.809pt x 1298.451pt>
+(pdftex.def)             Requested size: 249.11763pt x 207.7052pt.
+ [9 <./immagini/fotoEFv1_pl.jpg>] [10 <./immagini/oscillo1.PNG (PNG copy)>] [11
+ <./immagini/graficoEFv1.png (PNG copy)>]
+<immagini/EFv2_1.png, id=304, 1447.809pt x 1298.451pt>
 File: immagini/EFv2_1.png Graphic file (type png)
 <use immagini/EFv2_1.png>
 Package pdftex.def Info: immagini/EFv2_1.png  used on input line 297.
-(pdftex.def)             Requested size: 317.23764pt x 284.52756pt.
-<immagini/EFv2_1_pl.png, id=307, 1426.128pt x 1423.719pt>
+(pdftex.def)             Requested size: 288.6951pt x 258.92024pt.
+
+[12 <./immagini/EFv2_1.png>]
+<immagini/EFv2_1_pl.png, id=313, 1426.128pt x 1423.719pt>
 File: immagini/EFv2_1_pl.png Graphic file (type png)
 <use immagini/EFv2_1_pl.png>
 Package pdftex.def Info: immagini/EFv2_1_pl.png  used on input line 305.
 (pdftex.def)             Requested size: 256.49611pt x 256.0748pt.
-<immagini/EFv2_2.png, id=309, 1436.9685pt x 1430.946pt>
+<immagini/EFv2_2.png, id=315, 1436.9685pt x 1430.946pt>
 File: immagini/EFv2_2.png Graphic file (type png)
 <use immagini/EFv2_2.png>
 Package pdftex.def Info: immagini/EFv2_2.png  used on input line 315.
 (pdftex.def)             Requested size: 257.15218pt x 256.0748pt.
-<immagini/EFv2_3.png, id=311, 1432.1505pt x 1206.909pt>
+<immagini/EFv2_3.png, id=317, 1432.1505pt x 1206.909pt>
 File: immagini/EFv2_3.png Graphic file (type png)
 <use immagini/EFv2_3.png>
 Package pdftex.def Info: immagini/EFv2_3.png  used on input line 322.
 (pdftex.def)             Requested size: 303.86359pt x 256.0748pt.
-<immagini/EFv2_3_pl.png, id=313, 1426.128pt x 1621.257pt>
+<immagini/EFv2_3_pl.png, id=319, 1426.128pt x 1621.257pt>
 File: immagini/EFv2_3_pl.png Graphic file (type png)
 <use immagini/EFv2_3_pl.png>
 Package pdftex.def Info: immagini/EFv2_3_pl.png  used on input line 329.
 (pdftex.def)             Requested size: 250.27249pt x 284.52756pt.
- [12 <./immagini/EFv2_1.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <./immagini/EFv2_1_pl.png>] [14 <./immagini/EFv2_2.png> <./immagini/EFv2_3.
 png>]
-<immagini/EFv2_3_ps.png, id=340, 1471.899pt x 1011.78pt>
+<immagini/EFv2_3_ps.png, id=339, 1471.899pt x 1011.78pt>
 File: immagini/EFv2_3_ps.png Graphic file (type png)
 <use immagini/EFv2_3_ps.png>
 Package pdftex.def Info: immagini/EFv2_3_ps.png  used on input line 356.
 (pdftex.def)             Requested size: 413.92566pt x 284.52756pt.
  [15 <./immagini/EFv2_3_pl.png>]
-<immagini/oscillo2.png, id=350, 803.0pt x 481.8pt>
+<immagini/oscillo2.png, id=349, 803.0pt x 481.8pt>
 File: immagini/oscillo2.png Graphic file (type png)
 <use immagini/oscillo2.png>
 Package pdftex.def Info: immagini/oscillo2.png  used on input line 367.
-(pdftex.def)             Requested size: 331.94pt x 199.16928pt.
+(pdftex.def)             Requested size: 346.16547pt x 207.7052pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16 <./immagini/EFv2_3_ps.png>]
-<immagini/fotoEFv2_3.jpg, id=360, 1206.5075pt x 699.61375pt>
+<immagini/fotoEFv2_3.jpg, id=359, 1206.5075pt x 699.61375pt>
 File: immagini/fotoEFv2_3.jpg Graphic file (type jpg)
 <use immagini/fotoEFv2_3.jpg>
 Package pdftex.def Info: immagini/fotoEFv2_3.jpg  used on input line 384.
@@ -1465,18 +1459,18 @@ Package pdftex.def Info: immagini/fotoEFv2_3.jpg  used on input line 384.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<immagini/oscillo3.png, id=364, 803.0pt x 481.8pt>
+<immagini/oscillo3.png, id=363, 803.0pt x 481.8pt>
 File: immagini/oscillo3.png Graphic file (type png)
 <use immagini/oscillo3.png>
 Package pdftex.def Info: immagini/oscillo3.png  used on input line 446.
-(pdftex.def)             Requested size: 331.94pt x 199.16928pt.
+(pdftex.def)             Requested size: 379.3705pt x 227.62204pt.
 [17 <./immagini/oscillo2.PNG (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18 <./immagini/fotoEFv2_3.jpg>] [19 <./immagini/oscillo3.PNG (PNG copy)>]
 Capitolo 2.
-<immagini/CEv1.png, id=384, 1442.991pt x 1125.003pt>
+<immagini/CEv1.png, id=383, 1442.991pt x 1125.003pt>
 File: immagini/CEv1.png Graphic file (type png)
 <use immagini/CEv1.png>
 Package pdftex.def Info: immagini/CEv1.png  used on input line 467.
@@ -1485,51 +1479,51 @@ Package pdftex.def Info: immagini/CEv1.png  used on input line 467.
 
 
  <./immagini/CEv1.png>]
-<immagini/CEv1_ps.png, id=392, 1447.809pt x 1021.416pt>
+<immagini/CEv1_ps.png, id=391, 1447.809pt x 1021.416pt>
 File: immagini/CEv1_ps.png Graphic file (type png)
 <use immagini/CEv1_ps.png>
 Package pdftex.def Info: immagini/CEv1_ps.png  used on input line 475.
-(pdftex.def)             Requested size: 350.8613pt x 247.53888pt.
+(pdftex.def)             Requested size: 310.54384pt x 219.08612pt.
  [21 <./immagini/CEv1_ps.png>]
-<immagini/CEv2.png, id=402, 1421.31pt x 1642.938pt>
+<immagini/CEv2.png, id=401, 1421.31pt x 1642.938pt>
 File: immagini/CEv2.png Graphic file (type png)
 <use immagini/CEv2.png>
-Package pdftex.def Info: immagini/CEv2.png  used on input line 493.
+Package pdftex.def Info: immagini/CEv2.png  used on input line 494.
 (pdftex.def)             Requested size: 270.7457pt x 312.9803pt.
-<immagini/CEv2_pl.png, id=404, 1418.901pt x 1816.386pt>
+<immagini/CEv2_pl.png, id=403, 1418.901pt x 1816.386pt>
 File: immagini/CEv2_pl.png Graphic file (type png)
 <use immagini/CEv2_pl.png>
-Package pdftex.def Info: immagini/CEv2_pl.png  used on input line 501.
-(pdftex.def)             Requested size: 244.47923pt x 312.9803pt.
+Package pdftex.def Info: immagini/CEv2_pl.png  used on input line 502.
+(pdftex.def)             Requested size: 255.58601pt x 327.20668pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [22 <./immagini/CEv2.png>]
-<immagini/CEv2_ps.png, id=414, 1445.4pt x 1228.59pt>
+<immagini/CEv2_ps.png, id=413, 1445.4pt x 1228.59pt>
 File: immagini/CEv2_ps.png Graphic file (type png)
 <use immagini/CEv2_ps.png>
-Package pdftex.def Info: immagini/CEv2_ps.png  used on input line 532.
+Package pdftex.def Info: immagini/CEv2_ps.png  used on input line 533.
 (pdftex.def)             Requested size: 368.20822pt x 312.9803pt.
  [23 <./immagini/CEv2_pl.png>] [24 <./immagini/CEv2_ps.png>]
-<immagini/fotoCEv2_pl.jpg, id=433, 1237.62375pt x 895.345pt>
+<immagini/fotoCEv2_pl.jpg, id=432, 1237.62375pt x 895.345pt>
 File: immagini/fotoCEv2_pl.jpg Graphic file (type jpg)
 <use immagini/fotoCEv2_pl.jpg>
-Package pdftex.def Info: immagini/fotoCEv2_pl.jpg  used on input line 563.
+Package pdftex.def Info: immagini/fotoCEv2_pl.jpg  used on input line 564.
 (pdftex.def)             Requested size: 350.02594pt x 253.22934pt.
  [25 <./immagini/fotoCEv2_pl.jpg>]
-<immagini/oscillo4.png, id=445, 803.0pt x 481.8pt>
+<immagini/oscillo4.png, id=444, 803.0pt x 481.8pt>
 File: immagini/oscillo4.png Graphic file (type png)
 <use immagini/oscillo4.png>
-Package pdftex.def Info: immagini/oscillo4.png  used on input line 619.
+Package pdftex.def Info: immagini/oscillo4.png  used on input line 620.
 (pdftex.def)             Requested size: 379.3705pt x 227.62204pt.
-<immagini/oscillo5.png, id=446, 803.0pt x 481.8pt>
+<immagini/oscillo5.png, id=445, 803.0pt x 481.8pt>
 File: immagini/oscillo5.png Graphic file (type png)
 <use immagini/oscillo5.png>
-Package pdftex.def Info: immagini/oscillo5.png  used on input line 625.
+Package pdftex.def Info: immagini/oscillo5.png  used on input line 626.
 (pdftex.def)             Requested size: 379.3705pt x 227.62204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--630
+Underfull \hbox (badness 10000) in paragraph at lines 575--631
 
  []
 
@@ -1543,13 +1537,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <immagini/CEv3.png, id=456, 1428.537pt x 1276.77pt>
 File: immagini/CEv3.png Graphic file (type png)
 <use immagini/CEv3.png>
-Package pdftex.def Info: immagini/CEv3.png  used on input line 634.
+Package pdftex.def Info: immagini/CEv3.png  used on input line 635.
 (pdftex.def)             Requested size: 318.33348pt x 284.52756pt.
  [27 <./immagini/oscillo4.PNG (PNG copy)> <./immagini/oscillo5.PNG (PNG copy)>]
 <immagini/CEv3_pl.png, id=464, 1442.991pt x 1385.175pt>
 File: immagini/CEv3_pl.png Graphic file (type png)
 <use immagini/CEv3_pl.png>
-Package pdftex.def Info: immagini/CEv3_pl.png  used on input line 642.
+Package pdftex.def Info: immagini/CEv3_pl.png  used on input line 643.
 (pdftex.def)             Requested size: 326.04611pt x 312.9803pt.
 
 
@@ -1559,7 +1553,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <immagini/CEv3_ps.png, id=474, 1464.672pt x 1047.915pt>
 File: immagini/CEv3_ps.png Graphic file (type png)
 <use immagini/CEv3_ps.png>
-Package pdftex.def Info: immagini/CEv3_ps.png  used on input line 668.
+Package pdftex.def Info: immagini/CEv3_ps.png  used on input line 669.
 (pdftex.def)             Requested size: 397.67929pt x 284.52756pt.
 
 
@@ -1569,43 +1563,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <immagini/fotoCEv3.jpg, id=486, 1033.8625pt x 609.27625pt>
 File: immagini/fotoCEv3.jpg Graphic file (type jpg)
 <use immagini/fotoCEv3.jpg>
-Package pdftex.def Info: immagini/fotoCEv3.jpg  used on input line 690.
+Package pdftex.def Info: immagini/fotoCEv3.jpg  used on input line 691.
 (pdftex.def)             Requested size: 376.59157pt x 221.93158pt.
  [30 <./immagini/CEv3_ps.png>]
 <immagini/oscillo6.png, id=497, 803.0pt x 481.8pt>
 File: immagini/oscillo6.png Graphic file (type png)
 <use immagini/oscillo6.png>
-Package pdftex.def Info: immagini/oscillo6.png  used on input line 752.
+Package pdftex.def Info: immagini/oscillo6.png  used on input line 753.
 (pdftex.def)             Requested size: 355.64912pt x 213.39566pt.
 <immagini/oscillo7.png, id=499, 803.0pt x 481.8pt>
 File: immagini/oscillo7.png Graphic file (type png)
 <use immagini/oscillo7.png>
-Package pdftex.def Info: immagini/oscillo7.png  used on input line 759.
+Package pdftex.def Info: immagini/oscillo7.png  used on input line 760.
 (pdftex.def)             Requested size: 341.42365pt x 204.85974pt.
 <immagini/oscillo8.png, id=501, 803.0pt x 481.8pt>
 File: immagini/oscillo8.png Graphic file (type png)
 <use immagini/oscillo8.png>
-Package pdftex.def Info: immagini/oscillo8.png  used on input line 766.
+Package pdftex.def Info: immagini/oscillo8.png  used on input line 767.
 (pdftex.def)             Requested size: 341.42365pt x 204.85974pt.
 <immagini/oscillo9.png, id=503, 803.0pt x 481.8pt>
 File: immagini/oscillo9.png Graphic file (type png)
 <use immagini/oscillo9.png>
-Package pdftex.def Info: immagini/oscillo9.png  used on input line 773.
+Package pdftex.def Info: immagini/oscillo9.png  used on input line 774.
 (pdftex.def)             Requested size: 379.3705pt x 227.62204pt.
 <immagini/oscillo10.png, id=506, 803.0pt x 481.8pt>
 File: immagini/oscillo10.png Graphic file (type png)
 <use immagini/oscillo10.png>
-Package pdftex.def Info: immagini/oscillo10.png  used on input line 789.
+Package pdftex.def Info: immagini/oscillo10.png  used on input line 790.
 (pdftex.def)             Requested size: 398.3378pt x 239.00298pt.
 <immagini/oscillo11.png, id=507, 803.0pt x 481.8pt>
 File: immagini/oscillo11.png Graphic file (type png)
 <use immagini/oscillo11.png>
-Package pdftex.def Info: immagini/oscillo11.png  used on input line 795.
+Package pdftex.def Info: immagini/oscillo11.png  used on input line 796.
 (pdftex.def)             Requested size: 398.3378pt x 239.00298pt.
 <immagini/graficoCEv3.png, id=509, 1291.07344pt x 697.10437pt>
 File: immagini/graficoCEv3.png Graphic file (type png)
 <use immagini/graficoCEv3.png>
-Package pdftex.def Info: immagini/graficoCEv3.png  used on input line 802.
+Package pdftex.def Info: immagini/graficoCEv3.png  used on input line 803.
 (pdftex.def)             Requested size: 443.57848pt x 239.50139pt.
  [31 <./immagini/fotoCEv3.jpg>]
 
@@ -1629,7 +1623,7 @@ Capitolo 3.
 <immagini/741pinout.png, id=549, 1351.0475pt x 602.25pt>
 File: immagini/741pinout.png Graphic file (type png)
 <use immagini/741pinout.png>
-Package pdftex.def Info: immagini/741pinout.png  used on input line 826.
+Package pdftex.def Info: immagini/741pinout.png  used on input line 827.
 (pdftex.def)             Requested size: 351.05792pt x 156.49014pt.
 [37
 
@@ -1638,28 +1632,28 @@ Package pdftex.def Info: immagini/741pinout.png  used on input line 826.
 <immagini/amplinv.png, id=556, 1420.1055pt x 800.9925pt>
 File: immagini/amplinv.png Graphic file (type png)
 <use immagini/amplinv.png>
-Package pdftex.def Info: immagini/amplinv.png  used on input line 835.
+Package pdftex.def Info: immagini/amplinv.png  used on input line 836.
 (pdftex.def)             Requested size: 378.31972pt x 213.39566pt.
  [38 <./immagini/amplinv.png>]
 <immagini/foto_amplinv.jpg, id=566, 1194.4625pt x 699.61375pt>
 File: immagini/foto_amplinv.jpg Graphic file (type jpg)
 <use immagini/foto_amplinv.jpg>
-Package pdftex.def Info: immagini/foto_amplinv.jpg  used on input line 869.
+Package pdftex.def Info: immagini/foto_amplinv.jpg  used on input line 870.
 (pdftex.def)             Requested size: 437.20544pt x 256.0748pt.
 <immagini/oscillo12.png, id=570, 803.0pt x 481.8pt>
 File: immagini/oscillo12.png Graphic file (type png)
 <use immagini/oscillo12.png>
-Package pdftex.def Info: immagini/oscillo12.png  used on input line 894.
+Package pdftex.def Info: immagini/oscillo12.png  used on input line 895.
 (pdftex.def)             Requested size: 426.801pt x 256.0748pt.
 <immagini/oscillo13.png, id=571, 803.0pt x 481.8pt>
 File: immagini/oscillo13.png Graphic file (type png)
 <use immagini/oscillo13.png>
-Package pdftex.def Info: immagini/oscillo13.png  used on input line 900.
+Package pdftex.def Info: immagini/oscillo13.png  used on input line 901.
 (pdftex.def)             Requested size: 422.04692pt x 253.22934pt.
 <immagini/oscillo14.png, id=572, 803.0pt x 481.8pt>
 File: immagini/oscillo14.png Graphic file (type png)
 <use immagini/oscillo14.png>
-Package pdftex.def Info: immagini/oscillo14.png  used on input line 909.
+Package pdftex.def Info: immagini/oscillo14.png  used on input line 910.
 (pdftex.def)             Requested size: 422.04692pt x 253.22934pt.
 
 [39 <./immagini/foto_amplinv.jpg>]
@@ -1671,18 +1665,18 @@ opy)> <./immagini/oscillo14.PNG (PNG copy)>]
 <immagini/int.png, id=591, 1430.946pt x 1069.596pt>
 File: immagini/int.png Graphic file (type png)
 <use immagini/int.png>
-Package pdftex.def Info: immagini/int.png  used on input line 919.
+Package pdftex.def Info: immagini/int.png  used on input line 920.
 (pdftex.def)             Requested size: 312.12346pt x 233.3125pt.
  [42 <./immagini/int.png>]
 <immagini/foto_int.jpg, id=601, 1194.4625pt x 748.7975pt>
 File: immagini/foto_int.jpg Graphic file (type jpg)
 <use immagini/foto_int.jpg>
-Package pdftex.def Info: immagini/foto_int.jpg  used on input line 963.
+Package pdftex.def Info: immagini/foto_int.jpg  used on input line 964.
 (pdftex.def)             Requested size: 326.7923pt x 204.85974pt.
 <immagini/oscillo15.png, id=604, 803.0pt x 481.8pt>
 File: immagini/oscillo15.png Graphic file (type png)
 <use immagini/oscillo15.png>
-Package pdftex.def Info: immagini/oscillo15.png  used on input line 971.
+Package pdftex.def Info: immagini/oscillo15.png  used on input line 972.
 (pdftex.def)             Requested size: 341.42365pt x 204.85974pt.
  [43]
 [44 <./immagini/foto_int.jpg> <./immagini/oscillo15.PNG (PNG copy)>] [45]
@@ -1694,13 +1688,13 @@ Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 21FAF51A27009A11903E7EBAF0A166AD;5604.
  ) 
 Here is how much of TeX's memory you used:
- 30673 strings out of 478353
- 606302 string characters out of 5852101
- 891905 words of memory out of 5000000
- 48127 multiletter control sequences out of 15000+600000
+ 30674 strings out of 478353
+ 606321 string characters out of 5852101
+ 896003 words of memory out of 5000000
+ 48128 multiletter control sequences out of 15000+600000
  409912 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,14n,133p,1139b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,14n,133p,1179b,822s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-di
@@ -1721,7 +1715,7 @@ ts/type1/public/lm/lmssbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
 cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
 fbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
 b>
-Output written on relazione.pdf (46 pages, 4196818 bytes).
+Output written on relazione.pdf (46 pages, 4197913 bytes).
 PDF statistics:
  736 PDF objects out of 1000 (max. 8388607)
  574 compressed objects within 6 object streams
